@@ -1,0 +1,2308 @@
+[
+  {
+    "id": "superior_rectus",
+    "name": "Superior rectus",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["common tendinous ring"],
+    "insertion": [
+      "superior surface of eyeball posterior to corneoscleral junction"
+    ],
+    "innervation": ["oculomotor nerve (CN III)"],
+    "action": ["elevates eyeball", "adducts eyeball"]
+  },
+  {
+    "id": "inferior_rectus",
+    "name": "Inferior rectus",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["common tendinous ring"],
+    "insertion": [
+      "inferior surface of eyeball posterior to corneoscleral junction"
+    ],
+    "innervation": ["oculomotor nerve (CN III)"],
+    "action": ["depresses eyeball", "adducts eyeball"]
+  },
+  {
+    "id": "medial_rectus",
+    "name": "Medial rectus",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["common tendinous ring"],
+    "insertion": [
+      "medial surface of eyeball posterior to corneoscleral junction"
+    ],
+    "innervation": ["oculomotor nerve (CN III)"],
+    "action": ["adducts eyeball"]
+  },
+  {
+    "id": "lateral_rectus",
+    "name": "Lateral rectus",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["common tendinous ring"],
+    "insertion": [
+      "lateral surface of eyeball posterior to corneoscleral junction"
+    ],
+    "innervation": ["abducens nerve (CN VI)"],
+    "action": ["abducts eyeball"]
+  },
+  {
+    "id": "superior_oblique",
+    "name": "Superior oblique",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["posterior wall of orbital cavity"],
+    "insertion": ["superior surface of eyeball beneath superior rectus"],
+    "innervation": ["trochlear nerve (CN IV)"],
+    "action": [
+      "depresses eyeball",
+      "abducts eyeball",
+      "medially rotates eyeball"
+    ]
+  },
+  {
+    "id": "inferior_oblique",
+    "name": "Inferior oblique",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["floor of orbital cavity"],
+    "insertion": ["lateral surface of eyeball deep to lateral rectus"],
+    "innervation": ["oculomotor nerve (CN III)"],
+    "action": [
+      "elevates eyeball",
+      "abducts eyeball",
+      "laterally rotates eyeball"
+    ]
+  },
+  {
+    "id": "sphincter_pupillae",
+    "name": "Sphincter pupillae",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["iris"],
+    "insertion": ["iris"],
+    "innervation": ["parasympathetic fibers via oculomotor nerve (CN III)"],
+    "action": ["constricts pupil"]
+  },
+  {
+    "id": "dilator_pupillae",
+    "name": "Dilator pupillae",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["iris"],
+    "insertion": ["iris"],
+    "innervation": ["sympathetic fibers"],
+    "action": ["dilates pupil"]
+  },
+  {
+    "id": "ciliary_muscle",
+    "name": "Ciliary muscle",
+    "type": "muscle",
+    "region": "eye",
+    "origin": ["ciliary body"],
+    "insertion": ["ciliary body"],
+    "innervation": ["parasympathetic fibers via oculomotor nerve (CN III)"],
+    "action": ["controls shape of lens", "enables accommodation"]
+  },
+  {
+    "id": "orbicularis_oculi_palpebral",
+    "name": "Orbicularis oculi (palpebral part)",
+    "type": "muscle",
+    "region": "eyelid",
+    "origin": ["medial palpebral ligament"],
+    "insertion": ["lateral palpebral raphe"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["closes eyelids", "assists lacrimal drainage"]
+  },
+  {
+    "id": "orbicularis_oculi_orbital",
+    "name": "Orbicularis oculi (orbital part)",
+    "type": "muscle",
+    "region": "eyelid",
+    "origin": ["medial palpebral ligament", "adjacent orbital bone"],
+    "insertion": ["skin around orbit"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["forcefully closes eyelids"]
+  },
+  {
+    "id": "levator_palpebrae_superioris",
+    "name": "Levator palpebrae superioris",
+    "type": "muscle",
+    "region": "eyelid",
+    "origin": ["posterior part of orbital cavity"],
+    "insertion": ["superior tarsal plate"],
+    "innervation": ["oculomotor nerve (CN III)", "sympathetic fibers"],
+    "action": ["elevates upper eyelid"]
+  },
+  {
+    "id": "occipitofrontalis_occipital_belly",
+    "name": "Occipitofrontalis (occipital belly)",
+    "type": "muscle",
+    "region": "scalp",
+    "origin": ["highest nuchal line of occipital bone"],
+    "insertion": ["epicranial aponeurosis"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["moves scalp", "assists elevation of eyebrows"]
+  },
+  {
+    "id": "occipitofrontalis_frontal_belly",
+    "name": "Occipitofrontalis (frontal belly)",
+    "type": "muscle",
+    "region": "scalp",
+    "origin": ["epicranial aponeurosis"],
+    "insertion": ["skin of eyebrows"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["raises eyebrows", "wrinkles forehead"]
+  },
+  {
+    "id": "corrugator_supercilii",
+    "name": "Corrugator supercilii",
+    "type": "muscle",
+    "region": "face",
+    "origin": ["superciliary arch"],
+    "insertion": ["skin of eyebrow"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["draws eyebrows medially", "produces vertical forehead wrinkles"]
+  },
+  {
+    "id": "compressor_nasi",
+    "name": "Compressor nasi",
+    "type": "muscle",
+    "region": "face",
+    "origin": ["frontal process of maxilla"],
+    "insertion": ["aponeurosis of nasal bridge"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["compresses nasal cartilages"]
+  },
+  {
+    "id": "dilator_naris",
+    "name": "Dilator naris",
+    "type": "muscle",
+    "region": "face",
+    "origin": ["maxilla"],
+    "insertion": ["ala of nose"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["widens nasal aperture"]
+  },
+  {
+    "id": "procerus",
+    "name": "Procerus",
+    "type": "muscle",
+    "region": "face",
+    "origin": ["nasal bone"],
+    "insertion": ["skin between eyebrows"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["wrinkles skin over bridge of nose"]
+  },
+  {
+    "id": "orbicularis_oris",
+    "name": "Orbicularis oris",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["maxilla", "mandible", "skin around mouth"],
+    "insertion": ["skin and mucosa of lips"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["compresses lips", "purses lips"]
+  },
+  {
+    "id": "levator_labii_superioris_alaeque_nasi",
+    "name": "Levator labii superioris alaeque nasi",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["maxilla"],
+    "insertion": ["upper lip", "ala of nose"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates upper lip", "dilates nostril"]
+  },
+  {
+    "id": "levator_labii_superioris",
+    "name": "Levator labii superioris",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["maxilla"],
+    "insertion": ["upper lip"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates upper lip"]
+  },
+  {
+    "id": "zygomaticus_minor",
+    "name": "Zygomaticus minor",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["zygomatic bone"],
+    "insertion": ["upper lip"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates upper lip"]
+  },
+  {
+    "id": "zygomaticus_major",
+    "name": "Zygomaticus major",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["zygomatic bone"],
+    "insertion": ["angle of mouth"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates angle of mouth"]
+  },
+  {
+    "id": "levator_anguli_oris",
+    "name": "Levator anguli oris",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["maxilla"],
+    "insertion": ["angle of mouth"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates angle of mouth"]
+  },
+  {
+    "id": "risorius",
+    "name": "Risorius",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["fascia of cheek"],
+    "insertion": ["angle of mouth"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["retracts angle of mouth"]
+  },
+  {
+    "id": "depressor_anguli_oris",
+    "name": "Depressor anguli oris",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["mandible"],
+    "insertion": ["angle of mouth"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["depresses angle of mouth"]
+  },
+  {
+    "id": "depressor_labii_inferioris",
+    "name": "Depressor labii inferioris",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["mandible"],
+    "insertion": ["lower lip"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["depresses lower lip"]
+  },
+  {
+    "id": "mentalis",
+    "name": "Mentalis",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": ["mandible"],
+    "insertion": ["skin of chin"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["protrudes lower lip", "wrinkles chin"]
+  },
+  {
+    "id": "buccinator",
+    "name": "Buccinator",
+    "type": "muscle",
+    "region": "mouth",
+    "origin": [
+      "alveolar processes of maxilla",
+      "alveolar processes of mandible",
+      "pterygomandibular raphe"
+    ],
+    "insertion": ["angle of mouth"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["compresses cheek against teeth"]
+  },
+  {
+    "id": "platysma",
+    "name": "Platysma",
+    "type": "muscle",
+    "region": "neck",
+    "origin": ["deep fascia over pectoralis major", "deep fascia over deltoid"],
+    "insertion": ["body of mandible", "skin of lower face"],
+    "innervation": ["facial nerve (cervical branch)"],
+    "action": ["depresses mandible", "depresses angle of mouth"]
+  },
+  {
+    "id": "masseter",
+    "name": "Masseter",
+    "type": "muscle",
+    "region": "mastication",
+    "origin": ["zygomatic arch"],
+    "insertion": ["lateral surface of ramus of mandible"],
+    "innervation": ["mandibular division of trigeminal nerve (CN V3)"],
+    "action": ["elevates mandible"]
+  },
+  {
+    "id": "temporalis",
+    "name": "Temporalis",
+    "type": "muscle",
+    "region": "mastication",
+    "origin": ["temporal fossa"],
+    "insertion": ["coronoid process of mandible"],
+    "innervation": ["mandibular division of trigeminal nerve (CN V3)"],
+    "action": ["elevates mandible", "retracts mandible"]
+  },
+  {
+    "id": "lateral_pterygoid",
+    "name": "Lateral pterygoid",
+    "type": "muscle",
+    "region": "mastication",
+    "origin": ["greater wing of sphenoid", "lateral pterygoid plate"],
+    "insertion": [
+      "neck of mandible",
+      "articular disc of temporomandibular joint"
+    ],
+    "innervation": ["mandibular division of trigeminal nerve (CN V3)"],
+    "action": ["protracts mandible"]
+  },
+  {
+    "id": "medial_pterygoid",
+    "name": "Medial pterygoid",
+    "type": "muscle",
+    "region": "mastication",
+    "origin": ["maxilla", "lateral pterygoid plate"],
+    "insertion": ["medial surface of angle of mandible"],
+    "innervation": ["mandibular division of trigeminal nerve (CN V3)"],
+    "action": ["elevates mandible"]
+  },
+  {
+    "id": "intrinsic_longitudinal_tongue",
+    "name": "Longitudinal muscles of tongue",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["median septum of tongue", "submucosa of tongue"],
+    "insertion": ["mucous membrane of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["alters shape of tongue", "shortens tongue"]
+  },
+  {
+    "id": "intrinsic_transverse_tongue",
+    "name": "Transverse muscle of tongue",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["median fibrous septum of tongue"],
+    "insertion": ["lateral margins of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["narrows and elongates tongue"]
+  },
+  {
+    "id": "intrinsic_vertical_tongue",
+    "name": "Vertical muscle of tongue",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["dorsal surface of tongue"],
+    "insertion": ["ventral surface of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["flattens and broadens tongue"]
+  },
+  {
+    "id": "genioglossus",
+    "name": "Genioglossus",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["superior mental spine of mandible"],
+    "insertion": ["entire length of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["protrudes tongue", "depresses tongue"]
+  },
+  {
+    "id": "hyoglossus",
+    "name": "Hyoglossus",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["body of hyoid bone", "greater horn of hyoid bone"],
+    "insertion": ["side of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["depresses tongue"]
+  },
+  {
+    "id": "styloglossus",
+    "name": "Styloglossus",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["styloid process of temporal bone"],
+    "insertion": ["side of tongue"],
+    "innervation": ["hypoglossal nerve (CN XII)"],
+    "action": ["retracts tongue", "elevates tongue"]
+  },
+  {
+    "id": "palatoglossus",
+    "name": "Palatoglossus",
+    "type": "muscle",
+    "region": "tongue",
+    "origin": ["palatine aponeurosis"],
+    "insertion": ["side of tongue"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["elevates posterior tongue", "narrows oropharyngeal isthmus"]
+  },
+  {
+    "id": "sternocleidomastoid",
+    "name": "Sternocleidomastoid",
+    "type": "muscle",
+    "region": "neck",
+    "origin": ["manubrium sterni", "medial third of clavicle"],
+    "insertion": [
+      "mastoid process of temporal bone",
+      "lateral part of superior nuchal line"
+    ],
+    "innervation": ["accessory nerve (CN XI)", "cervical nerves C2-C3"],
+    "action": [
+      "bilateral contraction flexes neck",
+      "unilateral contraction rotates head to opposite side"
+    ]
+  },
+  {
+    "id": "digastric_posterior_belly",
+    "name": "Digastric (posterior belly)",
+    "type": "muscle",
+    "region": "suprahyoid",
+    "origin": ["mastoid notch of temporal bone"],
+    "insertion": ["intermediate tendon"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates hyoid bone", "depresses mandible"]
+  },
+  {
+    "id": "digastric_anterior_belly",
+    "name": "Digastric (anterior belly)",
+    "type": "muscle",
+    "region": "suprahyoid",
+    "origin": ["digastric fossa of mandible"],
+    "insertion": ["intermediate tendon"],
+    "innervation": ["nerve to mylohyoid"],
+    "action": ["depresses mandible", "elevates hyoid bone"]
+  },
+  {
+    "id": "stylohyoid",
+    "name": "Stylohyoid",
+    "type": "muscle",
+    "region": "suprahyoid",
+    "origin": ["styloid process of temporal bone"],
+    "insertion": ["body of hyoid bone"],
+    "innervation": ["facial nerve (CN VII)"],
+    "action": ["elevates hyoid bone"]
+  },
+  {
+    "id": "mylohyoid",
+    "name": "Mylohyoid",
+    "type": "muscle",
+    "region": "suprahyoid",
+    "origin": ["mylohyoid line of mandible"],
+    "insertion": ["body of hyoid bone", "median fibrous raphe"],
+    "innervation": ["nerve to mylohyoid"],
+    "action": ["elevates floor of mouth", "elevates hyoid bone"]
+  },
+  {
+    "id": "geniohyoid",
+    "name": "Geniohyoid",
+    "type": "muscle",
+    "region": "suprahyoid",
+    "origin": ["inferior mental spine of mandible"],
+    "insertion": ["body of hyoid bone"],
+    "innervation": ["cervical nerve C1 via hypoglossal nerve"],
+    "action": ["elevates hyoid bone", "depresses mandible"]
+  },
+  {
+    "id": "sternohyoid",
+    "name": "Sternohyoid",
+    "type": "muscle",
+    "region": "infrahyoid",
+    "origin": ["manubrium sterni", "medial clavicle"],
+    "insertion": ["body of hyoid bone"],
+    "innervation": ["ansa cervicalis (C1-C3)"],
+    "action": ["depresses hyoid bone"]
+  },
+  {
+    "id": "sternothyroid",
+    "name": "Sternothyroid",
+    "type": "muscle",
+    "region": "infrahyoid",
+    "origin": ["manubrium sterni"],
+    "insertion": ["oblique line of thyroid cartilage"],
+    "innervation": ["ansa cervicalis (C1-C3)"],
+    "action": ["depresses larynx"]
+  },
+  {
+    "id": "thyrohyoid",
+    "name": "Thyrohyoid",
+    "type": "muscle",
+    "region": "infrahyoid",
+    "origin": ["oblique line of thyroid cartilage"],
+    "insertion": ["lower border of hyoid bone"],
+    "innervation": ["cervical nerve C1 via hypoglossal nerve"],
+    "action": ["depresses hyoid bone", "elevates larynx"]
+  },
+  {
+    "id": "omohyoid_inferior_belly",
+    "name": "Omohyoid (inferior belly)",
+    "type": "muscle",
+    "region": "infrahyoid",
+    "origin": ["superior border of scapula"],
+    "insertion": ["intermediate tendon"],
+    "innervation": ["ansa cervicalis (C1-C3)"],
+    "action": ["depresses hyoid bone"]
+  },
+  {
+    "id": "omohyoid_superior_belly",
+    "name": "Omohyoid (superior belly)",
+    "type": "muscle",
+    "region": "infrahyoid",
+    "origin": ["intermediate tendon"],
+    "insertion": ["body of hyoid bone"],
+    "innervation": ["ansa cervicalis (C1-C3)"],
+    "action": ["depresses hyoid bone"]
+  },
+  {
+    "id": "scalenus_anterior",
+    "name": "Scalenus anterior",
+    "type": "muscle",
+    "region": "deep_neck",
+    "origin": ["transverse processes of C3-C6"],
+    "insertion": ["first rib"],
+    "innervation": ["cervical nerves C4-C6"],
+    "action": ["elevates first rib", "laterally flexes neck"]
+  },
+  {
+    "id": "scalenus_medius",
+    "name": "Scalenus medius",
+    "type": "muscle",
+    "region": "deep_neck",
+    "origin": ["transverse processes of C2-C7"],
+    "insertion": ["first rib"],
+    "innervation": ["anterior rami of cervical nerves"],
+    "action": ["elevates first rib", "laterally flexes neck"]
+  },
+  {
+    "id": "scalenus_posterior",
+    "name": "Scalenus posterior",
+    "type": "muscle",
+    "region": "deep_neck",
+    "origin": ["transverse processes of lower cervical vertebrae"],
+    "insertion": ["second rib"],
+    "innervation": ["anterior rami of cervical nerves"],
+    "action": ["elevates second rib", "laterally flexes neck"]
+  },
+  {
+    "id": "pectoralis_major",
+    "name": "Pectoralis major",
+    "type": "muscle",
+    "region": "pectoral_region",
+    "origin": ["clavicle", "sternum", "upper six costal cartilages"],
+    "insertion": ["lateral lip of bicipital groove of humerus"],
+    "innervation": ["medial pectoral nerve", "lateral pectoral nerve"],
+    "action": [
+      "adducts arm",
+      "medially rotates arm",
+      "flexes arm (clavicular fibers)"
+    ]
+  },
+  {
+    "id": "pectoralis_minor",
+    "name": "Pectoralis minor",
+    "type": "muscle",
+    "region": "pectoral_region",
+    "origin": ["3rd, 4th, and 5th ribs"],
+    "insertion": ["coracoid process of scapula"],
+    "innervation": ["medial pectoral nerve"],
+    "action": [
+      "depresses point of shoulder",
+      "elevates ribs when scapula is fixed"
+    ]
+  },
+  {
+    "id": "subclavius",
+    "name": "Subclavius",
+    "type": "muscle",
+    "region": "pectoral_region",
+    "origin": ["first costal cartilage"],
+    "insertion": ["clavicle"],
+    "innervation": ["nerve to subclavius"],
+    "action": [
+      "depresses clavicle",
+      "steadies clavicle during shoulder movements"
+    ]
+  },
+  {
+    "id": "serratus_anterior",
+    "name": "Serratus anterior",
+    "type": "muscle",
+    "region": "pectoral_region",
+    "origin": ["upper eight ribs"],
+    "insertion": ["medial border of scapula", "inferior angle of scapula"],
+    "innervation": ["long thoracic nerve"],
+    "action": [
+      "protracts scapula",
+      "rotates scapula upward",
+      "holds scapula against thoracic wall"
+    ]
+  },
+  {
+    "id": "trapezius",
+    "name": "Trapezius",
+    "type": "muscle",
+    "region": "superficial_back",
+    "origin": [
+      "occipital bone",
+      "ligamentum nuchae",
+      "spinous process of C7",
+      "spinous processes of thoracic vertebrae"
+    ],
+    "insertion": ["lateral third of clavicle", "acromion", "spine of scapula"],
+    "innervation": ["spinal accessory nerve (motor)", "C3 and C4 (sensory)"],
+    "action": [
+      "elevates scapula (upper fibers)",
+      "retracts scapula (middle fibers)",
+      "depresses scapula (lower fibers)"
+    ]
+  },
+  {
+    "id": "latissimus_dorsi",
+    "name": "Latissimus dorsi",
+    "type": "muscle",
+    "region": "superficial_back",
+    "origin": [
+      "iliac crest",
+      "thoracolumbar fascia",
+      "spinous processes of lower six thoracic vertebrae",
+      "lower ribs",
+      "inferior angle of scapula"
+    ],
+    "insertion": ["floor of bicipital groove of humerus"],
+    "innervation": ["thoracodorsal nerve"],
+    "action": ["extends arm", "adducts arm", "medially rotates arm"]
+  },
+  {
+    "id": "levator_scapulae",
+    "name": "Levator scapulae",
+    "type": "muscle",
+    "region": "superficial_back",
+    "origin": ["transverse processes of C1-C4"],
+    "insertion": ["medial border of scapula"],
+    "innervation": ["dorsal scapular nerve", "C3 and C4"],
+    "action": ["elevates medial border of scapula"]
+  },
+  {
+    "id": "rhomboid_minor",
+    "name": "Rhomboid minor",
+    "type": "muscle",
+    "region": "superficial_back",
+    "origin": ["ligamentum nuchae", "spinous processes of C7 and T1"],
+    "insertion": ["medial border of scapula"],
+    "innervation": ["dorsal scapular nerve"],
+    "action": ["retracts scapula", "elevates medial border of scapula"]
+  },
+  {
+    "id": "rhomboid_major",
+    "name": "Rhomboid major",
+    "type": "muscle",
+    "region": "superficial_back",
+    "origin": ["spinous processes of T2-T5"],
+    "insertion": ["medial border of scapula"],
+    "innervation": ["dorsal scapular nerve"],
+    "action": ["retracts scapula", "elevates medial border of scapula"]
+  },
+  {
+    "id": "deltoid",
+    "name": "Deltoid",
+    "type": "muscle",
+    "region": "shoulder",
+    "origin": ["lateral third of clavicle", "acromion", "spine of scapula"],
+    "insertion": ["deltoid tuberosity of humerus"],
+    "innervation": ["axillary nerve"],
+    "action": [
+      "abducts arm",
+      "flexes and medially rotates arm (anterior fibers)",
+      "extends and laterally rotates arm (posterior fibers)"
+    ]
+  },
+  {
+    "id": "supraspinatus",
+    "name": "Supraspinatus",
+    "type": "muscle",
+    "region": "rotator_cuff",
+    "origin": ["supraspinous fossa of scapula"],
+    "insertion": ["greater tuberosity of humerus", "capsule of shoulder joint"],
+    "innervation": ["suprascapular nerve"],
+    "action": ["initiates abduction of arm", "stabilizes shoulder joint"]
+  },
+  {
+    "id": "infraspinatus",
+    "name": "Infraspinatus",
+    "type": "muscle",
+    "region": "rotator_cuff",
+    "origin": ["infraspinous fossa of scapula"],
+    "insertion": ["greater tuberosity of humerus", "capsule of shoulder joint"],
+    "innervation": ["suprascapular nerve"],
+    "action": ["laterally rotates arm", "stabilizes shoulder joint"]
+  },
+  {
+    "id": "teres_major",
+    "name": "Teres major",
+    "type": "muscle",
+    "region": "shoulder",
+    "origin": ["lower third of lateral border of scapula"],
+    "insertion": ["medial lip of bicipital groove of humerus"],
+    "innervation": ["lower subscapular nerve"],
+    "action": [
+      "adducts arm",
+      "medially rotates arm",
+      "stabilizes shoulder joint"
+    ]
+  },
+  {
+    "id": "teres_minor",
+    "name": "Teres minor",
+    "type": "muscle",
+    "region": "rotator_cuff",
+    "origin": ["upper two thirds of lateral border of scapula"],
+    "insertion": ["greater tuberosity of humerus", "capsule of shoulder joint"],
+    "innervation": ["axillary nerve"],
+    "action": ["laterally rotates arm", "stabilizes shoulder joint"]
+  },
+  {
+    "id": "subscapularis",
+    "name": "Subscapularis",
+    "type": "muscle",
+    "region": "rotator_cuff",
+    "origin": ["subscapular fossa"],
+    "insertion": ["lesser tuberosity of humerus"],
+    "innervation": ["upper subscapular nerve", "lower subscapular nerve"],
+    "action": ["medially rotates arm", "stabilizes shoulder joint"]
+  },
+  {
+    "id": "biceps_brachii",
+    "name": "Biceps brachii",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": [
+      "long head: supraglenoid tubercle of scapula",
+      "short head: coracoid process of scapula"
+    ],
+    "insertion": [
+      "tuberosity of radius",
+      "bicipital aponeurosis into deep fascia of forearm"
+    ],
+    "innervation": ["musculocutaneous nerve"],
+    "action": ["supinates forearm", "flexes elbow", "weakly flexes shoulder"]
+  },
+  {
+    "id": "coracobrachialis",
+    "name": "Coracobrachialis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["coracoid process of scapula"],
+    "insertion": ["medial surface of shaft of humerus"],
+    "innervation": ["musculocutaneous nerve"],
+    "action": ["flexes arm", "adducts arm"]
+  },
+  {
+    "id": "brachialis",
+    "name": "Brachialis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["anterior surface of distal half of humerus"],
+    "insertion": ["coronoid process of ulna"],
+    "innervation": ["musculocutaneous nerve"],
+    "action": ["flexes elbow"]
+  },
+  {
+    "id": "triceps_brachii",
+    "name": "Triceps brachii",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": [
+      "long head: infraglenoid tubercle of scapula",
+      "lateral head: posterior surface of humerus (upper half)",
+      "medial head: posterior surface of humerus (lower half)"
+    ],
+    "insertion": ["olecranon process of ulna"],
+    "innervation": ["radial nerve"],
+    "action": ["extends elbow"]
+  },
+  {
+    "id": "pronator_teres",
+    "name": "Pronator teres",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": [
+      "humeral head: medial epicondyle of humerus",
+      "ulnar head: medial border of coronoid process of ulna"
+    ],
+    "insertion": ["lateral surface of shaft of radius"],
+    "innervation": ["median nerve"],
+    "action": ["pronates forearm", "flexes forearm"]
+  },
+  {
+    "id": "flexor_carpi_radialis",
+    "name": "Flexor carpi radialis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["medial epicondyle of humerus"],
+    "insertion": ["base of 2nd metacarpal", "base of 3rd metacarpal"],
+    "innervation": ["median nerve"],
+    "action": ["flexes wrist", "abducts hand"]
+  },
+  {
+    "id": "palmaris_longus",
+    "name": "Palmaris longus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["medial epicondyle of humerus"],
+    "insertion": ["flexor retinaculum", "palmar aponeurosis"],
+    "innervation": ["median nerve"],
+    "action": ["flexes wrist"]
+  },
+  {
+    "id": "flexor_carpi_ulnaris",
+    "name": "Flexor carpi ulnaris",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": [
+      "humeral head: medial epicondyle of humerus",
+      "ulnar head: olecranon and posterior border of ulna"
+    ],
+    "insertion": ["pisiform", "hook of hamate", "base of 5th metacarpal"],
+    "innervation": ["ulnar nerve"],
+    "action": ["flexes wrist", "adducts hand"]
+  },
+  {
+    "id": "flexor_digitorum_superficialis",
+    "name": "Flexor digitorum superficialis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": [
+      "humeroulnar head: medial epicondyle of humerus and coronoid process of ulna",
+      "radial head: oblique line of radius"
+    ],
+    "insertion": ["middle phalanges of digits 2-5"],
+    "innervation": ["median nerve"],
+    "action": [
+      "flexes middle phalanges",
+      "assists flexion of proximal phalanges",
+      "assists wrist flexion"
+    ]
+  },
+  {
+    "id": "flexor_pollicis_longus",
+    "name": "Flexor pollicis longus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["anterior surface of radius"],
+    "insertion": ["distal phalanx of thumb"],
+    "innervation": ["anterior interosseous nerve"],
+    "action": ["flexes distal phalanx of thumb"]
+  },
+  {
+    "id": "flexor_digitorum_profundus",
+    "name": "Flexor digitorum profundus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["anterior and medial surface of ulna"],
+    "insertion": ["distal phalanges of digits 2-5"],
+    "innervation": ["median nerve (lateral half)", "ulnar nerve (medial half)"],
+    "action": [
+      "flexes distal phalanges",
+      "assists flexion of middle and proximal phalanges",
+      "assists wrist flexion"
+    ]
+  },
+  {
+    "id": "pronator_quadratus",
+    "name": "Pronator quadratus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["anterior surface of distal ulna"],
+    "insertion": ["anterior surface of distal radius"],
+    "innervation": ["anterior interosseous nerve"],
+    "action": ["pronates forearm"]
+  },
+  {
+    "id": "brachioradialis",
+    "name": "Brachioradialis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral supracondylar ridge of humerus"],
+    "insertion": ["base of styloid process of radius"],
+    "innervation": ["radial nerve"],
+    "action": ["flexes elbow", "brings forearm to midprone position"]
+  },
+  {
+    "id": "extensor_carpi_radialis_longus",
+    "name": "Extensor carpi radialis longus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral supracondylar ridge of humerus"],
+    "insertion": ["base of 2nd metacarpal"],
+    "innervation": ["radial nerve"],
+    "action": ["extends wrist", "abducts hand"]
+  },
+  {
+    "id": "extensor_carpi_radialis_brevis",
+    "name": "Extensor carpi radialis brevis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["base of 3rd metacarpal"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends wrist", "abducts hand"]
+  },
+  {
+    "id": "extensor_digitorum",
+    "name": "Extensor digitorum",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["middle and distal phalanges of digits 2-5"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends fingers", "extends wrist"]
+  },
+  {
+    "id": "extensor_digiti_minimi",
+    "name": "Extensor digiti minimi",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["extensor expansion of little finger"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends little finger"]
+  },
+  {
+    "id": "extensor_carpi_ulnaris",
+    "name": "Extensor carpi ulnaris",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["base of 5th metacarpal"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends wrist", "adducts hand"]
+  },
+  {
+    "id": "anconeus",
+    "name": "Anconeus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["lateral surface of olecranon of ulna"],
+    "innervation": ["radial nerve"],
+    "action": ["assists extension of elbow"]
+  },
+  {
+    "id": "supinator",
+    "name": "Supinator",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["lateral epicondyle of humerus"],
+    "insertion": ["neck and proximal shaft of radius"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["supinates forearm"]
+  },
+  {
+    "id": "abductor_pollicis_longus",
+    "name": "Abductor pollicis longus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["posterior surfaces of radius and ulna"],
+    "insertion": ["base of 1st metacarpal"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["abducts thumb", "extends thumb"]
+  },
+  {
+    "id": "extensor_pollicis_brevis",
+    "name": "Extensor pollicis brevis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["posterior surface of radius"],
+    "insertion": ["base of proximal phalanx of thumb"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends metacarpophalangeal joint of thumb"]
+  },
+  {
+    "id": "extensor_pollicis_longus",
+    "name": "Extensor pollicis longus",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["posterior surface of ulna"],
+    "insertion": ["base of distal phalanx of thumb"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends thumb"]
+  },
+  {
+    "id": "extensor_indicis",
+    "name": "Extensor indicis",
+    "type": "muscle",
+    "region": "upper_limb",
+    "origin": ["posterior surface of ulna"],
+    "insertion": ["extensor expansion of index finger"],
+    "innervation": ["deep branch of radial nerve"],
+    "action": ["extends index finger"]
+  },
+  {
+    "id": "palmaris_brevis",
+    "name": "Palmaris brevis",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["flexor retinaculum", "palmar aponeurosis"],
+    "insertion": ["skin of palm"],
+    "innervation": ["superficial branch of ulnar nerve"],
+    "action": ["corrugates skin of palm to improve grip"]
+  },
+  {
+    "id": "lumbricals",
+    "name": "Lumbricals",
+    "type": "muscle_group",
+    "region": "hand",
+    "origin": ["tendons of flexor digitorum profundus"],
+    "insertion": ["extensor expansions of digits 2-5"],
+    "innervation": [
+      "median nerve (1st and 2nd)",
+      "deep branch of ulnar nerve (3rd and 4th)"
+    ],
+    "action": [
+      "flex metacarpophalangeal joints",
+      "extend interphalangeal joints"
+    ]
+  },
+  {
+    "id": "palmar_interossei",
+    "name": "Palmar interossei",
+    "type": "muscle_group",
+    "region": "hand",
+    "origin": ["metacarpals of digits 1, 2, 4 and 5"],
+    "insertion": ["proximal phalanges", "extensor expansions"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": [
+      "adduct fingers toward middle finger",
+      "flex metacarpophalangeal joints",
+      "extend interphalangeal joints"
+    ]
+  },
+  {
+    "id": "dorsal_interossei",
+    "name": "Dorsal interossei",
+    "type": "muscle_group",
+    "region": "hand",
+    "origin": ["adjacent sides of metacarpal shafts"],
+    "insertion": ["proximal phalanges", "extensor expansions"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": [
+      "abduct fingers from middle finger",
+      "flex metacarpophalangeal joints",
+      "extend interphalangeal joints"
+    ]
+  },
+  {
+    "id": "abductor_pollicis_brevis",
+    "name": "Abductor pollicis brevis",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["scaphoid", "trapezium", "flexor retinaculum"],
+    "insertion": ["base of proximal phalanx of thumb"],
+    "innervation": ["median nerve"],
+    "action": ["abducts thumb"]
+  },
+  {
+    "id": "flexor_pollicis_brevis",
+    "name": "Flexor pollicis brevis",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["flexor retinaculum"],
+    "insertion": ["base of proximal phalanx of thumb"],
+    "innervation": ["median nerve"],
+    "action": ["flexes metacarpophalangeal joint of thumb"]
+  },
+  {
+    "id": "opponens_pollicis",
+    "name": "Opponens pollicis",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["flexor retinaculum"],
+    "insertion": ["shaft of 1st metacarpal"],
+    "innervation": ["median nerve"],
+    "action": ["opposes thumb"]
+  },
+  {
+    "id": "adductor_pollicis",
+    "name": "Adductor pollicis",
+    "type": "muscle",
+    "region": "hand",
+    "origin": [
+      "oblique head: 2nd and 3rd metacarpals",
+      "transverse head: 3rd metacarpal"
+    ],
+    "insertion": ["base of proximal phalanx of thumb"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": ["adducts thumb"]
+  },
+  {
+    "id": "abductor_digiti_minimi",
+    "name": "Abductor digiti minimi",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["pisiform"],
+    "insertion": ["base of proximal phalanx of little finger"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": ["abducts little finger"]
+  },
+  {
+    "id": "flexor_digiti_minimi",
+    "name": "Flexor digiti minimi",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["flexor retinaculum"],
+    "insertion": ["base of proximal phalanx of little finger"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": ["flexes little finger"]
+  },
+  {
+    "id": "opponens_digiti_minimi",
+    "name": "Opponens digiti minimi",
+    "type": "muscle",
+    "region": "hand",
+    "origin": ["flexor retinaculum"],
+    "insertion": ["medial border of 5th metacarpal"],
+    "innervation": ["deep branch of ulnar nerve"],
+    "action": ["opposes little finger"]
+  },
+  {
+    "id": "gluteus_maximus",
+    "name": "Gluteus maximus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": [
+      "outer surface of ilium",
+      "sacrum",
+      "coccyx",
+      "sacrotuberous ligament"
+    ],
+    "insertion": ["iliotibial tract", "gluteal tuberosity of femur"],
+    "innervation": ["inferior gluteal nerve"],
+    "action": [
+      "extends hip",
+      "laterally rotates thigh",
+      "assists knee extension via iliotibial tract"
+    ]
+  },
+  {
+    "id": "gluteus_medius",
+    "name": "Gluteus medius",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["outer surface of ilium"],
+    "insertion": ["lateral surface of greater trochanter of femur"],
+    "innervation": ["superior gluteal nerve"],
+    "action": ["abducts thigh", "stabilizes pelvis during walking"]
+  },
+  {
+    "id": "gluteus_minimus",
+    "name": "Gluteus minimus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["outer surface of ilium"],
+    "insertion": ["anterior surface of greater trochanter of femur"],
+    "innervation": ["superior gluteal nerve"],
+    "action": ["abducts thigh", "stabilizes pelvis during walking"]
+  },
+  {
+    "id": "tensor_fasciae_latae",
+    "name": "Tensor fasciae latae",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["iliac crest"],
+    "insertion": ["iliotibial tract"],
+    "innervation": ["superior gluteal nerve"],
+    "action": [
+      "assists hip flexion",
+      "assists knee extension via iliotibial tract"
+    ]
+  },
+  {
+    "id": "piriformis",
+    "name": "Piriformis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior surface of sacrum"],
+    "insertion": ["upper border of greater trochanter of femur"],
+    "innervation": ["sacral nerves"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "obturator_internus",
+    "name": "Obturator internus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["inner surface of obturator membrane"],
+    "insertion": ["upper border of greater trochanter of femur"],
+    "innervation": ["sacral plexus"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "gemellus_superior",
+    "name": "Gemellus superior",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["ischial spine"],
+    "insertion": ["upper border of greater trochanter of femur"],
+    "innervation": ["sacral plexus"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "gemellus_inferior",
+    "name": "Gemellus inferior",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["ischial tuberosity"],
+    "insertion": ["upper border of greater trochanter of femur"],
+    "innervation": ["sacral plexus"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "quadratus_femoris",
+    "name": "Quadratus femoris",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral border of ischial tuberosity"],
+    "insertion": ["quadrate tubercle of femur"],
+    "innervation": ["sacral plexus"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "sartorius",
+    "name": "Sartorius",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior superior iliac spine"],
+    "insertion": ["upper medial surface of tibia"],
+    "innervation": ["femoral nerve"],
+    "action": [
+      "flexes thigh",
+      "abducts thigh",
+      "laterally rotates thigh",
+      "flexes knee",
+      "medially rotates leg"
+    ]
+  },
+  {
+    "id": "iliacus",
+    "name": "Iliacus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["iliac fossa"],
+    "insertion": ["lesser trochanter of femur"],
+    "innervation": ["femoral nerve"],
+    "action": ["flexes thigh", "flexes trunk when thigh is fixed"]
+  },
+  {
+    "id": "psoas_major",
+    "name": "Psoas major",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["bodies and transverse processes of T12-L5 vertebrae"],
+    "insertion": ["lesser trochanter of femur"],
+    "innervation": ["lumbar plexus"],
+    "action": ["flexes thigh", "flexes trunk when thigh is fixed"]
+  },
+  {
+    "id": "pectineus",
+    "name": "Pectineus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["superior ramus of pubis"],
+    "insertion": ["upper part of linea aspera of femur"],
+    "innervation": ["femoral nerve"],
+    "action": ["flexes thigh", "adducts thigh"]
+  },
+  {
+    "id": "rectus_femoris",
+    "name": "Rectus femoris",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior inferior iliac spine", "ilium above acetabulum"],
+    "insertion": [
+      "patella via quadriceps tendon",
+      "tibial tuberosity via patellar ligament"
+    ],
+    "innervation": ["femoral nerve"],
+    "action": ["extends knee", "flexes thigh"]
+  },
+  {
+    "id": "vastus_lateralis",
+    "name": "Vastus lateralis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["shaft of femur"],
+    "insertion": [
+      "patella via quadriceps tendon",
+      "tibial tuberosity via patellar ligament"
+    ],
+    "innervation": ["femoral nerve"],
+    "action": ["extends knee"]
+  },
+  {
+    "id": "vastus_medialis",
+    "name": "Vastus medialis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["shaft of femur"],
+    "insertion": [
+      "patella via quadriceps tendon",
+      "tibial tuberosity via patellar ligament"
+    ],
+    "innervation": ["femoral nerve"],
+    "action": ["extends knee", "stabilizes patella"]
+  },
+  {
+    "id": "vastus_intermedius",
+    "name": "Vastus intermedius",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior and lateral surfaces of femur"],
+    "insertion": [
+      "patella via quadriceps tendon",
+      "tibial tuberosity via patellar ligament"
+    ],
+    "innervation": ["femoral nerve"],
+    "action": ["extends knee"]
+  },
+  {
+    "id": "gracilis",
+    "name": "Gracilis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["inferior ramus of pubis", "ramus of ischium"],
+    "insertion": ["medial surface of shaft of tibia"],
+    "innervation": ["obturator nerve"],
+    "action": ["adducts thigh", "flexes leg at knee"]
+  },
+  {
+    "id": "adductor_longus",
+    "name": "Adductor longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["body of pubis"],
+    "insertion": ["linea aspera of femur"],
+    "innervation": ["obturator nerve"],
+    "action": ["adducts thigh", "assists lateral rotation of thigh"]
+  },
+  {
+    "id": "adductor_brevis",
+    "name": "Adductor brevis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["inferior ramus of pubis"],
+    "insertion": ["linea aspera of femur"],
+    "innervation": ["obturator nerve"],
+    "action": ["adducts thigh", "assists lateral rotation of thigh"]
+  },
+  {
+    "id": "adductor_magnus",
+    "name": "Adductor magnus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": [
+      "inferior ramus of pubis",
+      "ramus of ischium",
+      "ischial tuberosity"
+    ],
+    "insertion": ["linea aspera of femur", "adductor tubercle of femur"],
+    "innervation": [
+      "obturator nerve (adductor portion)",
+      "tibial portion of sciatic nerve (hamstring portion)"
+    ],
+    "action": [
+      "adducts thigh",
+      "assists lateral rotation of thigh",
+      "extends thigh (hamstring portion)"
+    ]
+  },
+  {
+    "id": "obturator_externus",
+    "name": "Obturator externus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["outer surface of obturator membrane", "pubic and ischial rami"],
+    "insertion": ["medial surface of greater trochanter"],
+    "innervation": ["obturator nerve"],
+    "action": ["laterally rotates thigh"]
+  },
+  {
+    "id": "biceps_femoris",
+    "name": "Biceps femoris",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": [
+      "ischial tuberosity (long head)",
+      "linea aspera and lateral supracondylar ridge of femur (short head)"
+    ],
+    "insertion": ["head of fibula"],
+    "innervation": [
+      "tibial portion of sciatic nerve (long head)",
+      "common fibular portion of sciatic nerve (short head)"
+    ],
+    "action": [
+      "flexes knee",
+      "laterally rotates leg",
+      "extends thigh (long head)"
+    ]
+  },
+  {
+    "id": "semitendinosus",
+    "name": "Semitendinosus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["ischial tuberosity"],
+    "insertion": ["medial surface of shaft of tibia"],
+    "innervation": ["tibial portion of sciatic nerve"],
+    "action": ["flexes knee", "medially rotates leg", "extends thigh"]
+  },
+  {
+    "id": "semimembranosus",
+    "name": "Semimembranosus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["ischial tuberosity"],
+    "insertion": ["medial condyle of tibia"],
+    "innervation": ["tibial portion of sciatic nerve"],
+    "action": ["flexes knee", "medially rotates leg", "extends thigh"]
+  },
+  {
+    "id": "tibialis_anterior",
+    "name": "Tibialis anterior",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral surface of tibia", "interosseous membrane"],
+    "insertion": ["medial cuneiform", "base of first metatarsal"],
+    "innervation": ["deep fibular nerve"],
+    "action": [
+      "dorsiflexes foot",
+      "inverts foot",
+      "supports medial longitudinal arch"
+    ]
+  },
+  {
+    "id": "extensor_digitorum_longus",
+    "name": "Extensor digitorum longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["shaft of fibula"],
+    "insertion": ["extensor expansions of lateral four toes"],
+    "innervation": ["deep fibular nerve"],
+    "action": ["extends toes", "dorsiflexes foot"]
+  },
+  {
+    "id": "fibularis_tertius",
+    "name": "Fibularis tertius",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior surface of fibula"],
+    "insertion": ["base of fifth metatarsal"],
+    "innervation": ["deep fibular nerve"],
+    "action": ["dorsiflexes foot", "everts foot"]
+  },
+  {
+    "id": "extensor_hallucis_longus",
+    "name": "Extensor hallucis longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["anterior surface of fibula"],
+    "insertion": ["base of distal phalanx of great toe"],
+    "innervation": ["deep fibular nerve"],
+    "action": ["extends great toe", "dorsiflexes foot", "inverts foot"]
+  },
+  {
+    "id": "extensor_digitorum_brevis",
+    "name": "Extensor digitorum brevis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["calcaneus"],
+    "insertion": [
+      "proximal phalanx of great toe",
+      "extensor tendons of second to fourth toes"
+    ],
+    "innervation": ["deep fibular nerve"],
+    "action": ["assists extension of toes"]
+  },
+  {
+    "id": "fibularis_longus",
+    "name": "Fibularis longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral surface of shaft of fibula"],
+    "insertion": ["base of first metatarsal", "medial cuneiform"],
+    "innervation": ["superficial fibular nerve"],
+    "action": [
+      "plantarflexes foot",
+      "everts foot",
+      "supports lateral longitudinal arch",
+      "supports transverse arch"
+    ]
+  },
+  {
+    "id": "fibularis_brevis",
+    "name": "Fibularis brevis",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral surface of shaft of fibula"],
+    "insertion": ["base of fifth metatarsal"],
+    "innervation": ["superficial fibular nerve"],
+    "action": [
+      "plantarflexes foot",
+      "everts foot",
+      "supports lateral longitudinal arch"
+    ]
+  },
+  {
+    "id": "gastrocnemius",
+    "name": "Gastrocnemius",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": [
+      "lateral condyle of femur (lateral head)",
+      "area above medial condyle of femur (medial head)"
+    ],
+    "insertion": ["posterior surface of calcaneus via calcaneal tendon"],
+    "innervation": ["tibial nerve"],
+    "action": ["plantarflexes foot", "flexes knee"]
+  },
+  {
+    "id": "plantaris",
+    "name": "Plantaris",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral supracondylar ridge of femur"],
+    "insertion": ["posterior surface of calcaneus"],
+    "innervation": ["tibial nerve"],
+    "action": ["plantarflexes foot", "flexes knee"]
+  },
+  {
+    "id": "soleus",
+    "name": "Soleus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["shaft of tibia", "shaft of fibula"],
+    "insertion": ["posterior surface of calcaneus via calcaneal tendon"],
+    "innervation": ["tibial nerve"],
+    "action": [
+      "plantarflexes foot",
+      "provides main propulsive force in walking and running"
+    ]
+  },
+  {
+    "id": "popliteus",
+    "name": "Popliteus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["lateral surface of lateral condyle of femur"],
+    "insertion": ["posterior surface of tibia above soleal line"],
+    "innervation": ["tibial nerve"],
+    "action": [
+      "flexes knee",
+      "unlocks knee joint by laterally rotating femur on tibia"
+    ]
+  },
+  {
+    "id": "flexor_digitorum_longus",
+    "name": "Flexor digitorum longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["posterior surface of shaft of tibia"],
+    "insertion": ["bases of distal phalanges of lateral four toes"],
+    "innervation": ["tibial nerve"],
+    "action": [
+      "flexes distal phalanges of lateral four toes",
+      "plantarflexes foot",
+      "supports medial longitudinal arch",
+      "supports lateral longitudinal arch"
+    ]
+  },
+  {
+    "id": "flexor_hallucis_longus",
+    "name": "Flexor hallucis longus",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": ["posterior surface of shaft of fibula"],
+    "insertion": ["base of distal phalanx of great toe"],
+    "innervation": ["tibial nerve"],
+    "action": [
+      "flexes distal phalanx of great toe",
+      "plantarflexes foot",
+      "supports medial longitudinal arch"
+    ]
+  },
+  {
+    "id": "tibialis_posterior",
+    "name": "Tibialis posterior",
+    "type": "muscle",
+    "region": "lower_limb",
+    "origin": [
+      "posterior surface of tibia",
+      "posterior surface of fibula",
+      "interosseous membrane"
+    ],
+    "insertion": ["tuberosity of navicular", "adjacent tarsal bones"],
+    "innervation": ["tibial nerve"],
+    "action": [
+      "plantarflexes foot",
+      "inverts foot",
+      "supports medial longitudinal arch"
+    ]
+  },
+  {
+    "id": "abductor_hallucis",
+    "name": "Abductor hallucis",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["medial tuberosity of calcaneus", "flexor retinaculum"],
+    "insertion": ["base of proximal phalanx of great toe"],
+    "innervation": ["medial plantar nerve"],
+    "action": [
+      "flexes great toe",
+      "abducts great toe",
+      "supports medial longitudinal arch"
+    ]
+  },
+  {
+    "id": "flexor_digitorum_brevis",
+    "name": "Flexor digitorum brevis",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["medial tubercle of calcaneus"],
+    "insertion": ["middle phalanges of lateral four toes"],
+    "innervation": ["medial plantar nerve"],
+    "action": [
+      "flexes lateral four toes",
+      "supports medial longitudinal arch",
+      "supports lateral longitudinal arch"
+    ]
+  },
+  {
+    "id": "abductor_digiti_minimi_foot",
+    "name": "Abductor digiti minimi (foot)",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["medial tubercle of calcaneus", "lateral tubercle of calcaneus"],
+    "insertion": ["base of proximal phalanx of fifth toe"],
+    "innervation": ["lateral plantar nerve"],
+    "action": [
+      "flexes fifth toe",
+      "abducts fifth toe",
+      "supports lateral longitudinal arch"
+    ]
+  },
+  {
+    "id": "quadratus_plantae",
+    "name": "Quadratus plantae",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["medial surface of calcaneus", "lateral surface of calcaneus"],
+    "insertion": ["tendon of flexor digitorum longus"],
+    "innervation": ["lateral plantar nerve"],
+    "action": ["assists flexor digitorum longus in flexing lateral four toes"]
+  },
+  {
+    "id": "lumbricals_foot",
+    "name": "Lumbricals (foot)",
+    "type": "muscle_group",
+    "region": "foot_sole",
+    "origin": ["tendons of flexor digitorum longus"],
+    "insertion": [
+      "dorsal extensor expansions",
+      "bases of proximal phalanges of lateral four toes"
+    ],
+    "innervation": [
+      "medial plantar nerve (first)",
+      "lateral plantar nerve (second to fourth)"
+    ],
+    "action": [
+      "extends toes at interphalangeal joints",
+      "flexes metatarsophalangeal joints"
+    ]
+  },
+  {
+    "id": "flexor_hallucis_brevis",
+    "name": "Flexor hallucis brevis",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["cuboid", "lateral cuneiform", "tendon of tibialis posterior"],
+    "insertion": [
+      "medial side of base of proximal phalanx of great toe",
+      "lateral side of base of proximal phalanx of great toe"
+    ],
+    "innervation": ["medial plantar nerve"],
+    "action": [
+      "flexes metatarsophalangeal joint of great toe",
+      "supports medial longitudinal arch"
+    ]
+  },
+  {
+    "id": "adductor_hallucis",
+    "name": "Adductor hallucis",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": [
+      "bases of second, third, and fourth metatarsals (oblique head)",
+      "plantar ligaments (transverse head)"
+    ],
+    "insertion": ["lateral side of base of proximal phalanx of great toe"],
+    "innervation": ["deep branch of lateral plantar nerve"],
+    "action": [
+      "flexes metatarsophalangeal joint of great toe",
+      "holds metatarsal bones together"
+    ]
+  },
+  {
+    "id": "flexor_digiti_minimi_brevis_foot",
+    "name": "Flexor digiti minimi brevis (foot)",
+    "type": "muscle",
+    "region": "foot_sole",
+    "origin": ["base of fifth metatarsal"],
+    "insertion": ["lateral side of base of proximal phalanx of fifth toe"],
+    "innervation": ["lateral plantar nerve"],
+    "action": ["flexes metatarsophalangeal joint of little toe"]
+  },
+  {
+    "id": "dorsal_interossei_foot",
+    "name": "Dorsal interossei (foot)",
+    "type": "muscle_group",
+    "region": "foot_sole",
+    "origin": ["adjacent sides of metatarsal bones"],
+    "insertion": ["bases of proximal phalanges", "dorsal extensor expansions"],
+    "innervation": ["lateral plantar nerve"],
+    "action": [
+      "abducts toes",
+      "flexes metatarsophalangeal joints",
+      "extends interphalangeal joints"
+    ]
+  },
+  {
+    "id": "plantar_interossei_foot",
+    "name": "Plantar interossei (foot)",
+    "type": "muscle_group",
+    "region": "foot_sole",
+    "origin": ["inferior surfaces of third, fourth, and fifth metatarsals"],
+    "insertion": [
+      "medial sides of bases of proximal phalanges of lateral three toes"
+    ],
+    "innervation": ["lateral plantar nerve"],
+    "action": [
+      "adducts toes",
+      "flexes metatarsophalangeal joints",
+      "extends interphalangeal joints"
+    ]
+  },
+  {
+    "id": "extensor_digitorum_brevis_foot",
+    "name": "Extensor digitorum brevis (foot)",
+    "type": "muscle",
+    "region": "foot_dorsum",
+    "origin": [
+      "anterior part of upper surface of calcaneus",
+      "inferior extensor retinaculum"
+    ],
+    "insertion": [
+      "proximal phalanx of great toe",
+      "extensor tendons of second, third, and fourth toes"
+    ],
+    "innervation": ["deep fibular nerve"],
+    "action": ["extends toes"]
+  },
+  {
+    "id": "serratus_posterior_superior",
+    "name": "Serratus posterior superior",
+    "type": "muscle",
+    "region": "back",
+    "origin": [
+      "lower part of ligamentum nuchae",
+      "spinous processes of C7-T3",
+      "supraspinous ligaments"
+    ],
+    "insertion": ["upper borders of ribs 2-5"],
+    "innervation": ["anterior rami of thoracic nerves (T2-T5)"],
+    "action": ["elevates ribs 2-5"]
+  },
+  {
+    "id": "serratus_posterior_inferior",
+    "name": "Serratus posterior inferior",
+    "type": "muscle",
+    "region": "back",
+    "origin": ["spinous processes of T11-L3", "supraspinous ligaments"],
+    "insertion": ["lower borders of ribs 9-12"],
+    "innervation": ["anterior rami of thoracic nerves (T9-T12)"],
+    "action": [
+      "depresses ribs 9-12",
+      "stabilizes lower ribs during inspiration"
+    ]
+  },
+  {
+    "id": "splenius_capitis",
+    "name": "Splenius capitis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["lower half of ligamentum nuchae", "spinous processes of C7-T4"],
+    "insertion": [
+      "mastoid process of temporal bone",
+      "lateral third of superior nuchal line"
+    ],
+    "innervation": ["posterior rami of cervical spinal nerves"],
+    "action": [
+      "extends head and neck (bilateral)",
+      "rotates head to same side (unilateral)"
+    ]
+  },
+  {
+    "id": "splenius_cervicis",
+    "name": "Splenius cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["spinous processes of T3-T6"],
+    "insertion": ["transverse processes of C1-C3"],
+    "innervation": ["posterior rami of cervical spinal nerves"],
+    "action": [
+      "extends neck (bilateral)",
+      "rotates neck to same side (unilateral)"
+    ]
+  },
+  {
+    "id": "iliocostalis_lumborum",
+    "name": "Iliocostalis lumborum",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": [
+      "sacrum",
+      "spinous processes of lumbar and lower thoracic vertebrae",
+      "iliac crest"
+    ],
+    "insertion": ["angles of lower 6-7 ribs"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends vertebral column", "laterally flexes vertebral column"]
+  },
+  {
+    "id": "iliocostalis_thoracis",
+    "name": "Iliocostalis thoracis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["angles of lower 6 ribs"],
+    "insertion": ["angles of upper 6 ribs", "transverse process of C7"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends vertebral column", "laterally flexes vertebral column"]
+  },
+  {
+    "id": "iliocostalis_cervicis",
+    "name": "Iliocostalis cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["angles of ribs 3-6"],
+    "insertion": ["transverse processes of C4-C6"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends neck", "laterally flexes neck"]
+  },
+  {
+    "id": "longissimus_thoracis",
+    "name": "Longissimus thoracis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of lumbar vertebrae"],
+    "insertion": ["transverse processes of thoracic vertebrae", "ribs 2-12"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends vertebral column", "laterally flexes vertebral column"]
+  },
+  {
+    "id": "longissimus_cervicis",
+    "name": "Longissimus cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of T1-T5"],
+    "insertion": ["transverse processes of C2-C6"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends neck", "laterally flexes neck"]
+  },
+  {
+    "id": "longissimus_capitis",
+    "name": "Longissimus capitis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of T1-T5", "articular processes of C4-C6"],
+    "insertion": ["mastoid process of temporal bone"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends head", "rotates head to same side"]
+  },
+  {
+    "id": "spinalis_thoracis",
+    "name": "Spinalis thoracis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["spinous processes of T10-L2"],
+    "insertion": ["spinous processes of T1-T8"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends vertebral column"]
+  },
+  {
+    "id": "spinalis_cervicis",
+    "name": "Spinalis cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["lower part of ligamentum nuchae", "spinous processes of C7-T2"],
+    "insertion": ["spinous process of C2"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends neck"]
+  },
+  {
+    "id": "spinalis_capitis",
+    "name": "Spinalis capitis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["lower cervical and upper thoracic spinous processes"],
+    "insertion": ["occipital bone"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends head"]
+  },
+  {
+    "id": "semispinalis_thoracis",
+    "name": "Semispinalis thoracis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of T2-T10"],
+    "insertion": [
+      "spinous processes of upper thoracic and lower cervical vertebrae"
+    ],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends vertebral column", "rotates vertebral column"]
+  },
+  {
+    "id": "semispinalis_cervicis",
+    "name": "Semispinalis cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of T1-T6"],
+    "insertion": ["spinous processes of C2-C5"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends neck", "rotates neck"]
+  },
+  {
+    "id": "semispinalis_capitis",
+    "name": "Semispinalis capitis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of T1-T6", "articular processes of C4-C6"],
+    "insertion": ["occipital bone between nuchal lines"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["extends head", "rotates head"]
+  },
+  {
+    "id": "multifidus",
+    "name": "Multifidus",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": [
+      "sacrum",
+      "posterior superior iliac spine",
+      "mammillary processes of lumbar vertebrae",
+      "transverse processes of thoracic vertebrae",
+      "articular processes of cervical vertebrae"
+    ],
+    "insertion": ["spinous processes of vertebrae C2-L5"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["stabilizes vertebral column", "assists in extension"]
+  },
+  {
+    "id": "rotatores_lumborum",
+    "name": "Rotatores lumborum",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["mammillary processes of lumbar vertebrae"],
+    "insertion": ["spinous processes of lumbar vertebrae"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["rotates vertebral column", "stabilizes vertebrae"]
+  },
+  {
+    "id": "rotatores_thoracis",
+    "name": "Rotatores thoracis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of thoracic vertebrae"],
+    "insertion": ["spinous processes of thoracic vertebrae"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["rotates vertebral column", "stabilizes vertebrae"]
+  },
+  {
+    "id": "rotatores_cervicis",
+    "name": "Rotatores cervicis",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["articular processes of cervical vertebrae"],
+    "insertion": ["spinous processes of cervical vertebrae"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["rotates neck", "stabilizes cervical vertebrae"]
+  },
+  {
+    "id": "levatores_costarum",
+    "name": "Levatores costarum",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse processes of C7-T11 vertebrae"],
+    "insertion": ["rib below vertebra of origin near its tubercle"],
+    "innervation": ["posterior rami of thoracic spinal nerves"],
+    "action": ["elevates ribs", "assists inspiration"]
+  },
+  {
+    "id": "interspinales",
+    "name": "Interspinales",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["spinous process of vertebra"],
+    "insertion": ["spinous process of adjacent vertebra"],
+    "innervation": ["posterior rami of spinal nerves"],
+    "action": ["assists extension of vertebral column", "stabilizes vertebrae"]
+  },
+  {
+    "id": "intertransversarii",
+    "name": "Intertransversarii",
+    "type": "muscle",
+    "region": "deep_back",
+    "origin": ["transverse process of vertebra"],
+    "insertion": ["transverse process of adjacent vertebra"],
+    "innervation": ["posterior and anterior rami of spinal nerves"],
+    "action": [
+      "assists lateral flexion of vertebral column",
+      "stabilizes vertebrae"
+    ]
+  },
+  {
+    "id": "rectus_capitis_posterior_major",
+    "name": "Rectus capitis posterior major",
+    "type": "muscle",
+    "region": "suboccipital",
+    "origin": ["spinous process of axis (C2)"],
+    "insertion": ["lateral part of occipital bone below inferior nuchal line"],
+    "innervation": ["posterior ramus of C1"],
+    "action": ["extends head", "rotates head to same side"]
+  },
+  {
+    "id": "rectus_capitis_posterior_minor",
+    "name": "Rectus capitis posterior minor",
+    "type": "muscle",
+    "region": "suboccipital",
+    "origin": ["posterior tubercle of atlas (C1)"],
+    "insertion": ["medial part of occipital bone below inferior nuchal line"],
+    "innervation": ["posterior ramus of C1"],
+    "action": ["extends head"]
+  },
+  {
+    "id": "obliquus_capitis_superior",
+    "name": "Obliquus capitis superior",
+    "type": "muscle",
+    "region": "suboccipital",
+    "origin": ["transverse process of atlas (C1)"],
+    "insertion": ["occipital bone between superior and inferior nuchal lines"],
+    "innervation": ["posterior ramus of C1"],
+    "action": ["extends head", "laterally flexes head to same side"]
+  },
+  {
+    "id": "obliquus_capitis_inferior",
+    "name": "Obliquus capitis inferior",
+    "type": "muscle",
+    "region": "suboccipital",
+    "origin": ["spinous process of axis (C2)"],
+    "insertion": ["transverse process of atlas (C1)"],
+    "innervation": ["posterior ramus of C1"],
+    "action": ["rotates head to same side"]
+  },
+  {
+    "id": "external_intercostals",
+    "name": "External intercostals",
+    "type": "muscle",
+    "region": "thoracic_wall",
+    "origin": ["inferior border of rib above"],
+    "insertion": ["superior border of rib below"],
+    "innervation": ["intercostal nerves (T1-T11)"],
+    "action": [
+      "elevates ribs",
+      "supports intercostal spaces during inspiration"
+    ]
+  },
+  {
+    "id": "internal_intercostals",
+    "name": "Internal intercostals",
+    "type": "muscle",
+    "region": "thoracic_wall",
+    "origin": ["costal groove of rib above"],
+    "insertion": ["superior border of rib below"],
+    "innervation": ["intercostal nerves (T1-T11)"],
+    "action": [
+      "depresses ribs",
+      "supports intercostal spaces during expiration"
+    ]
+  },
+  {
+    "id": "innermost_intercostals",
+    "name": "Innermost intercostals",
+    "type": "muscle",
+    "region": "thoracic_wall",
+    "origin": ["medial edge of costal groove of rib above"],
+    "insertion": ["internal surface of rib below"],
+    "innervation": ["intercostal nerves (T1-T11)"],
+    "action": ["acts with internal intercostals to depress ribs"]
+  },
+  {
+    "id": "subcostales",
+    "name": "Subcostales",
+    "type": "muscle",
+    "region": "thoracic_wall",
+    "origin": ["internal surface of lower ribs near angle"],
+    "insertion": ["internal surface of rib two or three levels below"],
+    "innervation": ["intercostal nerves"],
+    "action": ["depresses ribs"]
+  },
+  {
+    "id": "transversus_thoracis",
+    "name": "Transversus thoracis",
+    "type": "muscle",
+    "region": "thoracic_wall",
+    "origin": [
+      "posterior surface of sternum",
+      "xiphoid process",
+      "costal cartilages of ribs 4-7"
+    ],
+    "insertion": ["costal cartilages of ribs 2-6"],
+    "innervation": ["intercostal nerves"],
+    "action": ["depresses costal cartilages"]
+  },
+  {
+    "id": "diaphragm",
+    "name": "Diaphragm",
+    "type": "muscle",
+    "region": "thorax",
+    "origin": [
+      "xiphoid process",
+      "costal cartilages of lower six ribs",
+      "lumbar vertebrae (crura)"
+    ],
+    "insertion": ["central tendon"],
+    "innervation": ["phrenic nerve (C3-C5)"],
+    "action": [
+      "primary muscle of inspiration",
+      "increases vertical diameter of thorax",
+      "assists in raising lower ribs",
+      "increases intra-abdominal pressure"
+    ]
+  },
+  {
+    "id": "quadratus_lumborum",
+    "name": "Quadratus lumborum",
+    "type": "muscle",
+    "region": "posterior_abdominal_wall",
+    "origin": ["iliac crest of os coxae"],
+    "insertion": [
+      "transverse processes of L1-L4 vertebrae",
+      "lower margin of rib 12"
+    ],
+    "innervation": ["anterior rami of T12-L4 spinal nerves"],
+    "action": [
+      "laterally flexes vertebral column",
+      "fixes rib 12 during inspiration"
+    ]
+  },
+  {
+    "id": "rectus_abdominis",
+    "name": "Rectus abdominis",
+    "type": "muscle",
+    "region": "abdominal_wall",
+    "origin": ["pubic crest", "pubic symphysis"],
+    "insertion": [
+      "xiphoid process of sternum",
+      "costal cartilages of ribs 5-7"
+    ],
+    "innervation": ["thoracoabdominal nerves (T7-T12)"],
+    "action": [
+      "flexes vertebral column",
+      "compresses abdominal viscera",
+      "stabilizes pelvis"
+    ]
+  },
+  {
+    "id": "external_oblique",
+    "name": "External oblique",
+    "type": "muscle",
+    "region": "abdominal_wall",
+    "origin": ["outer surfaces of ribs 4-12"],
+    "insertion": ["linea alba", "iliac crest of os coxae"],
+    "innervation": [
+      "thoracoabdominal nerves (T7-T11)",
+      "subcostal nerve (T12)"
+    ],
+    "action": [
+      "flexes vertebral column",
+      "rotates trunk contralaterally",
+      "compresses abdominal wall"
+    ]
+  },
+  {
+    "id": "internal_oblique",
+    "name": "Internal oblique",
+    "type": "muscle",
+    "region": "abdominal_wall",
+    "origin": ["iliac crest of os coxae", "thoracolumbar fascia"],
+    "insertion": ["linea alba", "pubic crest", "ribs 9-12"],
+    "innervation": [
+      "thoracoabdominal nerves (T7-T11)",
+      "subcostal nerve (T12)"
+    ],
+    "action": [
+      "flexes vertebral column",
+      "rotates trunk ipsilaterally",
+      "compresses abdominal wall"
+    ]
+  },
+  {
+    "id": "transversus_abdominis",
+    "name": "Transversus abdominis",
+    "type": "muscle",
+    "region": "abdominal_wall",
+    "origin": [
+      "thoracolumbar fascia",
+      "inner surfaces of ribs 7-12",
+      "iliac crest of os coxae"
+    ],
+    "insertion": ["linea alba", "pubic crest"],
+    "innervation": [
+      "thoracoabdominal nerves (T7-T11)",
+      "subcostal nerve (T12)"
+    ],
+    "action": ["compresses abdominal contents", "stabilizes trunk"]
+  },
+  {
+    "id": "pubococcygeus",
+    "name": "Pubococcygeus",
+    "type": "muscle",
+    "region": "pelvic_floor",
+    "origin": ["body of pubis"],
+    "insertion": ["coccyx", "anococcygeal ligament"],
+    "innervation": ["branches of S3-S4 spinal nerves"],
+    "action": ["supports pelvic viscera", "maintains continence"]
+  },
+  {
+    "id": "puborectalis",
+    "name": "Puborectalis",
+    "type": "muscle",
+    "region": "pelvic_floor",
+    "origin": ["body of pubis"],
+    "insertion": ["forms sling around anorectal junction"],
+    "innervation": ["branches of S3-S4 spinal nerves"],
+    "action": ["maintains fecal continence", "supports pelvic viscera"]
+  },
+  {
+    "id": "iliococcygeus",
+    "name": "Iliococcygeus",
+    "type": "muscle",
+    "region": "pelvic_floor",
+    "origin": ["ischial spine", "tendinous arch of obturator fascia"],
+    "insertion": ["coccyx", "anococcygeal ligament"],
+    "innervation": ["branches of S3-S4 spinal nerves"],
+    "action": ["supports pelvic viscera"]
+  },
+  {
+    "id": "coccygeus",
+    "name": "Coccygeus",
+    "type": "muscle",
+    "region": "pelvic_floor",
+    "origin": ["ischial spine"],
+    "insertion": ["sacrum", "coccyx"],
+    "innervation": ["branches of S4-S5 spinal nerves"],
+    "action": ["supports pelvic viscera", "flexes coccyx"]
+  }
+]

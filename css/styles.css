@@ -1,0 +1,193 @@
+/* ==========================
+   Reset & Base
+========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+/* ==========================
+   App Layout
+========================== */
+main.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section.input-wrapper,
+section.output-wrapper {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* ==========================
+   Input Field
+========================== */
+textarea#inputText {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+textarea#inputText:focus {
+  border-color: #3498db;
+}
+
+/* ==========================
+   Suggestions Dropdown
+========================== */
+ul.suggestions {
+  list-style: none;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 0;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+ul.suggestions.hidden {
+  display: none;
+}
+
+ul.suggestions li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+ul.suggestions li:hover,
+ul.suggestions li.highlighted {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+ul.suggestions li strong {
+  font-weight: 700;
+  color: #3498db;
+}
+
+/* ==========================
+   Output Field
+========================== */
+div.output {
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+div.output.placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+div.output.error {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+div.output .field {
+  margin-bottom: 0.75rem;
+}
+
+div.output .field strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #2c3e50;
+}
+
+div.output .field ul {
+  padding-left: 1.25rem;
+}
+
+div.output .field ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Responsive Adjustments
+========================== */
+@media (max-width: 600px) {
+  main.app {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea#inputText {
+    font-size: 0.95rem;
+  }
+
+  div.output {
+    font-size: 0.95rem;
+  }
+}
