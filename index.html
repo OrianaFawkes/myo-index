@@ -4,49 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myo Index</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <main class="app">
-      <h1>Myo Index</h1>
-
-      <section class="input-wrapper">
-        <label for="inputText">Muscle search</label>
-        <textarea
-          id="inputText"
-          placeholder="Type a muscle name or shorthand (e.g. del, deltoid)"
-          autocomplete="off"
-        ></textarea>
-
-        <ul id="suggestions" class="suggestions hidden"></ul>
-      </section>
-
-      <section class="output-wrapper">
-        <label>Normalized anatomy</label>
-        <div id="output" class="output placeholder">
-          Matched muscle details will appear here.
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a href="./">Myo Index</a>
-      * made by
-      <a
-        href="https://github.com/orianafawkes"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Ori</a
-      >
-      *
-      <a
-        href="https://github.com/orianafawkes/myo-index"
-        target="_blank"
-        rel="noopener noreferrer"
-        >GitHub</a
-      >
-    </footer>
-
+    <div id="app" class="content-grid">
+      <header>
+        <h1>Myo Index</h1>
+      </header>
+      <main class="app">
+        <section class="input-wrapper">
+          <label for="search-input">Muscle search</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Type a muscle name or shorthand (e.g. del, deltoid)"
+            autocomplete="off"
+            maxlength="50"
+            pattern="[A-Za-z0-9\s\-']+"
+          />
+          <ul id="suggestions" class="suggestions hidden"></ul>
+        </section>
+        <section class="output-wrapper">
+          <label>Normalized anatomy</label>
+          <div id="output" class="output placeholder">
+            Matched muscle details will appear here.
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="./">Myo Index</a>
+        * made by
+        <a
+          href="https://github.com/orianafawkes"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ori</a
+        >
+        *
+        <a
+          href="https://github.com/orianafawkes/myo-index"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </footer>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
