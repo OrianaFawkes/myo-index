@@ -1,0 +1,228 @@
+/* Redaction 10 */
+
+@font-face {
+  font-family: "Redaction-10";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_10-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-10";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_10-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-10";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_10-Bold.woff2") format("woff2");
+}
+
+/* Redaction 20 */
+
+@font-face {
+  font-family: "Redaction-20";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_20-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-20";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_20-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-20";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_20-Bold.woff2") format("woff2");
+}
+
+/* Redaction 35 */
+
+@font-face {
+  font-family: "Redaction-35";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_35-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-35";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_35-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-35";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_35-Bold.woff2") format("woff2");
+}
+
+/* Redaction 50 */
+
+@font-face {
+  font-family: "Redaction-50";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_50-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-50";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_50-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-50";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_50-Bold.woff2") format("woff2");
+}
+
+/* Redaction 70 */
+
+@font-face {
+  font-family: "Redaction-70";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_70-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-70";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_70-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-70";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_70-Bold.woff2") format("woff2");
+}
+
+/* Redaction 100 */
+
+@font-face {
+  font-family: "Redaction-100";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_100-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-100";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction_100-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction-100";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction_100-Bold.woff2") format("woff2");
+}
+
+/* Redaction */
+
+@font-face {
+  font-family: "Redaction";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Redaction/Redaction-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Redaction";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Redaction/Redaction-Bold.woff2") format("woff2");
+}
+
+:root {
+  --font: "Redaction", ui-serif, Georgia, "Times New Roman", serif;
+  --font-10: "Redaction-10", ui-serif, Georgia, "Times New Roman", serif;
+  --font-20: "Redaction-20", ui-serif, Georgia, "Times New Roman", serif;
+  --font-35: "Redaction-35", ui-serif, Georgia, "Times New Roman", serif;
+  --font-50: "Redaction-50", ui-serif, Georgia, "Times New Roman", serif;
+  --font-70: "Redaction-70", ui-serif, Georgia, "Times New Roman", serif;
+  --font-100: "Redaction-100", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: var(--font);
+  font-size: 2em;
+}
+
+h2 {
+  font-family: var(--font);
+  font-size: 1.6818em;
+}
+
+h3 {
+  font-family: var(--font);
+  font-size: 1.4142em;
+}
+
+h4 {
+  font-family: var(--font);
+  font-size: 1.1892em;
+}
+
+p,
+input[type="search"] {
+  font-family: var(--font);
+  font-size: 1em;
+}
+
+small {
+  font-family: var(--font);
+  font-size: 0.8409em;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
