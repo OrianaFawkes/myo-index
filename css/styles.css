@@ -246,6 +246,11 @@ textarea#inputText:focus {
   border-color: #3498db;
 }
 
+
+.input-wrapper.is-open input[type="search"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 /* ==========================
    Suggestions Dropdown
 ========================== */

@@ -46,27 +46,27 @@ export function renderSuggestions(
   query,
   inputEl,
   suggestionsEl,
+  inputWrapperEl,
   outputEl
 ) {
+  const hasMatches = matches.length > 0;
+
   suggestionsEl.innerHTML = "";
-  suggestionsEl.classList.toggle("hidden", matches.length === 0);
+  suggestionsEl.classList.toggle("hidden", !hasMatches);
+  inputWrapperEl.classList.toggle("is-open", hasMatches);
 
-  // reset navigation index
-  let selectedIndex = -1;
-
-  matches.forEach((muscle, idx) => {
+  matches.forEach((muscle) => {
     const li = document.createElement("li");
-    li.innerHTML = highlightMatch(muscle.name, query);
 
+    li.innerHTML = highlightMatch(muscle.name, query);
+    li.dataset.value = muscle.name;
     li.addEventListener("click", () => {
-      inputEl.value = muscle.name.toLowerCase();
-      selectedIndex = -1;
-      clearSuggestions(suggestionsEl);
+      inputEl.value = muscle.name;
+      inputWrapperEl.classList.remove("is-open");
+      clearSuggestions(suggestionsEl, inputWrapperEl);
       renderMuscle(muscle, outputEl);
     });
 
     suggestionsEl.appendChild(li);
   });
-
-  return { selectedIndex }; // return index to allow keyboard navigation tracking
 }

@@ -6,11 +6,13 @@ import { clearSuggestions, renderPlaceholder } from "./utils.js";
 const MYO_INDEX_VERSION = "0.1.0";
 
 let anatomyData = [];
-const inputEl = document.getElementById("inputText");
+let baseQuery = "";
+let selectedIndex = -1;
+
+const inputEl = document.getElementById("search-input");
+const inputWrapperEl = inputEl.closest(".input-wrapper");
 const suggestionsEl = document.getElementById("suggestions");
 const outputEl = document.getElementById("output");
-
-let selectedIndex = -1;
 
 async function init() {
   anatomyData = await loadAnatomyData();
@@ -19,12 +21,13 @@ async function init() {
 
 init();
 
-/* ---------- Input Handling ---------- */
 inputEl.addEventListener("input", () => {
   const query = inputEl.value.trim().toLowerCase();
 
+  baseQuery = inputEl.value;
+
   if (!query) {
-    clearSuggestions(suggestionsEl);
+    clearSuggestions(suggestionsEl, inputWrapperEl);
     renderPlaceholder(outputEl);
     selectedIndex = -1;
     return;
@@ -33,38 +36,69 @@ inputEl.addEventListener("input", () => {
   const matches = findMatches(query, anatomyData);
 
   if (matches.length === 1 && isExactMatch(query, matches[0])) {
-    clearSuggestions(suggestionsEl);
+    clearSuggestions(suggestionsEl, inputWrapperEl);
     renderMuscle(matches[0], outputEl);
   } else {
     selectedIndex = -1; // reset keyboard navigation
-    renderSuggestions(matches, query, inputEl, suggestionsEl, outputEl);
+    renderSuggestions(
+      matches,
+      query,
+      inputEl,
+      suggestionsEl,
+      inputWrapperEl,
+      outputEl
+    );
     renderGuidance(matches, outputEl);
   }
 });
 
-/* ---------- Keyboard Navigation ---------- */
 inputEl.addEventListener("keydown", (e) => {
   const items = suggestionsEl.querySelectorAll("li");
   if (!items.length) return;
 
   if (e.key === "ArrowDown") {
     e.preventDefault();
-    selectedIndex = (selectedIndex + 1) % items.length;
+
+    selectedIndex++;
+
+    if (selectedIndex >= items.length) {
+      selectedIndex = -1;
+      inputEl.value = baseQuery;
+    } else {
+      inputEl.value = items[selectedIndex].dataset.value;
+    }
+
     updateHighlight(items);
   } else if (e.key === "ArrowUp") {
     e.preventDefault();
-    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+
+    selectedIndex--;
+
+    if (selectedIndex < -1) {
+      selectedIndex = items.length - 1;
+      inputEl.value = items[selectedIndex].dataset.value;
+    } else if (selectedIndex === -1) {
+      inputEl.value = baseQuery;
+    } else {
+      inputEl.value = items[selectedIndex].dataset.value;
+    }
+
     updateHighlight(items);
   } else if (e.key === "Enter") {
     e.preventDefault();
+
     if (selectedIndex === -1) selectedIndex = 0;
+
     items[selectedIndex].click();
     selectedIndex = -1;
   } else if (e.key === "Escape") {
+    e.preventDefault();
+
     inputEl.value = "";
-    clearSuggestions(suggestionsEl);
-    renderPlaceholder(outputEl);
     selectedIndex = -1;
+
+    clearSuggestions(suggestionsEl, inputWrapperEl);
+    renderPlaceholder(outputEl);
   }
 });
 
