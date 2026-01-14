@@ -1,371 +1,197 @@
-/* Redaction 10 */
-
-@font-face {
-  font-family: "Redaction-10";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_10-Regular.woff2")
-    format("woff2");
+:root {
+  --roundness: 0.5rem;
 }
 
-@font-face {
-  font-family: "Redaction-10";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_10-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-10";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_10-Bold.woff2") format("woff2");
-}
-
-/* Redaction 20 */
-
-@font-face {
-  font-family: "Redaction-20";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_20-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-20";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_20-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-20";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_20-Bold.woff2") format("woff2");
-}
-
-/* Redaction 35 */
-
-@font-face {
-  font-family: "Redaction-35";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_35-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-35";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_35-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-35";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_35-Bold.woff2") format("woff2");
-}
-
-/* Redaction 50 */
-
-@font-face {
-  font-family: "Redaction-50";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_50-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-50";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_50-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-50";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_50-Bold.woff2") format("woff2");
-}
-
-/* Redaction 70 */
-
-@font-face {
-  font-family: "Redaction-70";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_70-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-70";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_70-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-70";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_70-Bold.woff2") format("woff2");
-}
-
-/* Redaction 100 */
-
-@font-face {
-  font-family: "Redaction-100";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_100-Regular.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-100";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction_100-Italic.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction-100";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction_100-Bold.woff2") format("woff2");
-}
-
-/* Redaction */
-
-@font-face {
-  font-family: "Redaction";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Redaction/Redaction-Italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Redaction";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/Redaction/Redaction-Bold.woff2") format("woff2");
-}
-
-/* ==========================
-   Reset & Base
-========================== */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+*,
+textarea {
+  scrollbar-color: var(--sub-color) var(--bg-color);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar,
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
+  background: var(--sub-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track,
+ul::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+html {
+  line-height: 1.25;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Redaction", "Times New Roman", Times, serif;
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.5;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #2c3e50;
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding-block: 2rem;
+  row-gap: 2rem;
 }
 
-h3 {
-  margin-bottom: 0.5rem;
-  color: #34495e;
+.content-grid {
+  --padding-inline: 2rem;
+  --content-max-width: 720px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--padding-inline), 1fr)
+    min(var(--content-max-width), 100%)
+    minmax(var(--padding-inline), 1fr);
 }
 
-/* ==========================
-   App Layout
-========================== */
+.content-grid > * {
+  grid-column: 2;
+}
+
 main.app {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  max-width: 700px;
-  margin: 0 auto;
+  align-items: start;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 1.5rem;
 }
 
-section.input-wrapper,
-section.output-wrapper {
+section {
   width: 100%;
-  margin-bottom: 1.5rem;
 }
 
 label {
+  color: var(--sub-color);
   display: block;
+  font-weight: bold;
   margin-bottom: 0.25rem;
-  font-weight: 600;
 }
 
-/* ==========================
-   Input Field
-========================== */
-textarea#inputText {
-  width: 100%;
-  min-height: 3rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  resize: vertical;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-textarea#inputText:focus {
-  border-color: #3498db;
-}
-
-
-.input-wrapper.is-open input[type="search"] {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-/* ==========================
-   Suggestions Dropdown
-========================== */
-ul.suggestions {
-  list-style: none;
-  margin-top: 0.25rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  max-height: 200px;
-  overflow-y: auto;
-  background: #fff;
-  padding: 0;
-  width: 100%;
-  z-index: 10;
+.input-wrapper {
   position: relative;
 }
 
-ul.suggestions.hidden {
+input[type="search"] {
+  border: 0.15em solid var(--main-color);
+  border-radius: var(--roundness);
+  font-size: 1rem;
+  min-width: 0;
+  outline: none;
+  padding: 0.5em;
+  width: 100%;
+}
+
+input[type="search"]:focus-visible {
+  border: 0.15em solid var(--main-color);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
   display: none;
 }
 
-ul.suggestions li {
+.input-wrapper.is-open input[type="search"] {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.suggestions {
+  background: var(--bg-color);
+  border: 0.15em solid var(--main-color);
+  border-radius: 0 0 var(--roundness) var(--roundness);
+  border-top: none;
+  list-style: none;
+  left: 0;
+  margin: 0;
+  outline: none;
+  overflow-y: auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 100;
+}
+
+.suggestions.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.suggestions li {
+  cursor: pointer;
   padding: 0.5rem;
+}
+
+.suggestions li:hover,
+.suggestions li.highlighted {
+  background: var(--sub-alt-color);
   cursor: pointer;
 }
 
-ul.suggestions li:hover,
-ul.suggestions li.highlighted {
-  background-color: #e0e0e0;
-  cursor: pointer;
-}
-
-ul.suggestions li strong {
-  font-weight: 700;
-  color: #3498db;
-}
-
-/* ==========================
-   Output Field
-========================== */
-div.output {
-  width: 100%;
+.output {
+  border-radius: var(--roundness);
   min-height: 5rem;
   padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #fff;
+  width: 100%;
 }
 
-div.output.placeholder {
-  color: #888;
+.output.placeholder {
   font-style: italic;
 }
 
-div.output.error {
-  color: #e74c3c;
-  font-weight: 600;
+.output.error {
+  color: var(--error-color);
+  font-weight: bold;
 }
 
-div.output .field {
+.output .field {
   margin-bottom: 0.75rem;
 }
 
-div.output .field strong {
+.output .field strong {
   display: block;
   margin-bottom: 0.25rem;
-  color: #2c3e50;
 }
 
-div.output .field ul {
+.output .field ul {
   padding-left: 1.25rem;
 }
 
-div.output .field ul li {
+.output .field ul li {
   margin-bottom: 0.25rem;
 }
 
-/* ==========================
-   Footer
-========================== */
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
+footer.footer {
   font-size: 0.9rem;
-  color: #555;
+  text-align: center;
 }
 
-footer a {
-  color: #3498db;
+footer.footer a,
+footer.footer a:visited {
+  color: var(--caret-color);
   text-decoration: none;
-  margin: 0 0.5rem;
 }
 
-footer a:hover {
+footer.footer a:hover {
+  color: var(--main-color);
   text-decoration: underline;
-}
-
-/* ==========================
-   Responsive Adjustments
-========================== */
-@media (max-width: 600px) {
-  main.app {
-    padding: 0.5rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  textarea#inputText {
-    font-size: 0.95rem;
-  }
-
-  div.output {
-    font-size: 0.95rem;
-  }
 }
