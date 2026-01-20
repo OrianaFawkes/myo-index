@@ -171,6 +171,7 @@
   src: url("../assets/fonts/Redaction/Redaction-Bold.woff2") format("woff2");
 }
 
+/* Libre Franklin */
 :root {
   --font: "Redaction", ui-serif, Georgia, "Times New Roman", serif;
   --font-10: "Redaction-10", ui-serif, Georgia, "Times New Roman", serif;
