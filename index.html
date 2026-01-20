@@ -15,39 +15,48 @@
       </header>
       <main class="app">
         <section class="input-wrapper">
-          <label for="search-input">Muscle search</label>
+          <label for="search-input">Muscle Search</label>
           <input
             type="search"
             id="search-input"
-            placeholder="Type a muscle name or shorthand (e.g. del, deltoid)"
+            placeholder="Type a muscle name or shorthand (e.g. del)"
             autocomplete="off"
             maxlength="50"
-            pattern="[A-Za-z0-9\s\-']+"
           />
           <ul id="suggestions" class="suggestions hidden"></ul>
         </section>
         <section class="output-wrapper">
-          <label>Normalized anatomy</label>
+          <label>Muscle Details</label>
           <div id="output" class="output placeholder">
-            Matched muscle details will appear here.
+            Muscle anatomy details will appear here.
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <a href="./">Myo Index</a>
-        * made by
-        <a
-          href="https://github.com/orianafawkes"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Ori</a
+      <footer>
+        <small>
+          Made by
+          <a
+            href="https://github.com/orianafawkes"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ori</a
+          ></small
         >
-        *
-        <a
-          href="https://github.com/orianafawkes/myo-index"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
+        <small>
+          <a
+            href="https://github.com/orianafawkes/myo-index"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          ></small
+        >
+        <small>
+          <a
+            href="https://forms.gle/ENGfeUgE3TtcWXwz9"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Feedback</a
+          ></small
         >
       </footer>
     </div>
