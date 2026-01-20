@@ -3,7 +3,8 @@ import { clearSuggestions } from "./utils.js";
 export function renderMuscle(muscle, outputEl) {
   outputEl.className = "output";
   outputEl.innerHTML = `
-    <h3>${muscle.name}</h3>
+    <h2>${muscle.name}</h2>
+    ${muscle.region ? `<p class="muscle-meta">(${formatRegion(muscle.region)})</p>` : ""}
     ${renderList("Origin", muscle.origin)}
     ${renderList("Insertion", muscle.insertion)}
     ${renderList("Innervation", muscle.innervation)}
@@ -17,7 +18,7 @@ export function renderList(label, items) {
     <div class="field">
       <strong>${label}</strong>
       <ul>
-        ${items.map((i) => `<li>${i}</li>`).join("")}
+        ${items.map((i) => `<li>${sentenceCase(i)}</li>`).join("")}
       </ul>
     </div>
   `;
@@ -28,7 +29,7 @@ export function renderGuidance(matches, outputEl) {
   outputEl.textContent =
     matches.length === 0
       ? "No matching muscles found."
-      : "Keep typing to select a muscle.";
+      : "Keep typing or press Enter to select.";
 }
 
 export function highlightMatch(text, query) {
@@ -70,4 +71,14 @@ export function renderSuggestions(
 
     suggestionsEl.appendChild(li);
   });
+}
+
+function formatRegion(region) {
+  return region
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function sentenceCase(text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }

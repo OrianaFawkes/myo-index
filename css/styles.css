@@ -1,7 +1,3 @@
-:root {
-  --roundness: 0.5rem;
-}
-
 *,
 *::before,
 *::after {
@@ -31,6 +27,7 @@ ul::-webkit-scrollbar-track {
 }
 
 html {
+  font-size: 18px;
   line-height: 1.25;
   scroll-behavior: smooth;
 }
@@ -38,15 +35,16 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  font-family: var(--font);
+  font-size: 1rem;
   margin: 0;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
 #app {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 100svh;
   padding-block: 2rem;
   row-gap: 2rem;
 }
@@ -57,14 +55,35 @@ body {
 
   display: grid;
   grid-template-columns:
-    minmax(var(--padding-inline), 1fr)
+    minmax(0, 1fr)
     min(var(--content-max-width), 100%)
-    minmax(var(--padding-inline), 1fr);
+    minmax(0, 1fr);
 }
 
 .content-grid > * {
   grid-column: 2;
+  min-width: 0;
+  padding-inline: var(--padding-inline);
 }
+
+/* HEADER */
+
+header {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+header h1 {
+  color: var(--main-color);
+  font-family: var(--font);
+  font-size: 2.0582em;
+  line-height: 1.5;
+  letter-spacing: 0.0875em;
+  margin: 0;
+}
+
+/* APP */
 
 main.app {
   align-items: start;
@@ -78,24 +97,36 @@ section {
 }
 
 label {
+  font-size: 0.7862em;
+  line-height: 1;
+  font-family: var(--sans-font);
   color: var(--sub-color);
   display: block;
   font-weight: bold;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
 }
+
+/* INPUT */
 
 .input-wrapper {
   position: relative;
 }
 
 input[type="search"] {
+  background-color: white;
   border: 0.15em solid var(--main-color);
-  border-radius: var(--roundness);
-  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-family: var(--font);
+  font-size: 1em;
   min-width: 0;
   outline: none;
   padding: 0.5em;
   width: 100%;
+}
+
+input[type="search"]:hover {
+  background-color: var(--bg-color);
 }
 
 input[type="search"]:focus-visible {
@@ -113,10 +144,12 @@ input[type="search"]::-webkit-search-cancel-button {
   border-bottom-right-radius: 0;
 }
 
+/* SUGGESTIONS */
+
 .suggestions {
-  background: var(--bg-color);
+  background-color: white;
   border: 0.15em solid var(--main-color);
-  border-radius: 0 0 var(--roundness) var(--roundness);
+  border-radius: 0 0 0.5rem 0.5rem;
   border-top: none;
   list-style: none;
   left: 0;
@@ -143,55 +176,104 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .suggestions li:hover,
 .suggestions li.highlighted {
-  background: var(--sub-alt-color);
-  cursor: pointer;
+  background-color: var(--bg-color);
 }
 
+/* OUTPUT */
+
 .output {
-  border-radius: var(--roundness);
-  min-height: 5rem;
-  padding: 0.75rem;
+  padding: 0;
+  border-top: 1px solid var(--border-color);
   width: 100%;
 }
 
 .output.placeholder {
-  font-style: italic;
+  color: var(--sub-color);
 }
 
 .output.error {
   color: var(--error-color);
-  font-weight: bold;
+}
+
+.output h2 {
+  margin: 0;
+  font-size: 1.35em;
+  line-height: 1.5;
+  letter-spacing: 0.0625em;
+  color: var(--main-color);
+  font-family: var(--font);
+  font-size: 1.272em;
+}
+
+.output .muscle-meta {
+  margin-top: 0.125rem;
+  margin-bottom: 1rem;
+  font-size: 0.7862em;
+  color: var(--sub-color);
+  letter-spacing: 0.01em;
 }
 
 .output .field {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.output .field:not(:last-child) {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--sub-alt-color);
 }
 
 .output .field strong {
-  display: block;
+  font-size: 0.7862em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sub-color);
   margin-bottom: 0.25rem;
 }
 
 .output .field ul {
-  padding-left: 1.25rem;
+  margin: 0;
+  padding-left: 1rem;
+  list-style-type: "* ";
 }
 
 .output .field ul li {
   margin-bottom: 0.25rem;
 }
 
-footer.footer {
-  font-size: 0.9rem;
+/* FOOTER */
+
+footer {
   text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
-footer.footer a,
-footer.footer a:visited {
-  color: var(--caret-color);
+footer small {
+  font-family: var(--font);
+  font-size: 0.7862em;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0.5em;
+}
+
+footer small,
+footer a,
+footer a:visited {
+  color: var(--sub-color);
   text-decoration: none;
 }
 
-footer.footer a:hover {
+footer a:hover {
   color: var(--main-color);
   text-decoration: underline;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }

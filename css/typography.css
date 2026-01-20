@@ -172,6 +172,23 @@
 }
 
 /* Libre Franklin */
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf")
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf")
+    format("ttf");
+}
+
 :root {
   --font: "Redaction", ui-serif, Georgia, "Times New Roman", serif;
   --font-10: "Redaction-10", ui-serif, Georgia, "Times New Roman", serif;
@@ -180,50 +197,5 @@
   --font-50: "Redaction-50", ui-serif, Georgia, "Times New Roman", serif;
   --font-70: "Redaction-70", ui-serif, Georgia, "Times New Roman", serif;
   --font-100: "Redaction-100", ui-serif, Georgia, "Times New Roman", serif;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: var(--font);
-  font-size: 1rem;
-}
-
-h1 {
-  font-family: var(--font);
-  font-size: 2em;
-}
-
-h2 {
-  font-family: var(--font);
-  font-size: 1.6818em;
-}
-
-h3 {
-  font-family: var(--font);
-  font-size: 1.4142em;
-}
-
-h4 {
-  font-family: var(--font);
-  font-size: 1.1892em;
-}
-
-p,
-input[type="search"] {
-  font-family: var(--font);
-  font-size: 1em;
-}
-
-small {
-  font-family: var(--font);
-  font-size: 0.8409em;
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
+  --sans-font: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
