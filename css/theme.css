@@ -1,10 +1,9 @@
-/* todo: update */
 :root {
-  --bg-color: #fffbfe;
-  --main-color: #b94189;
-  --caret-color: #e099d6;
-  --sub-color: #e094c2;
-  --sub-alt-color: #ecdcee;
-  --text-color: #5c2954;
-  --error-color: #ff6f69;
+  --bg-color: #f5f5f5;
+  --main-color: #ed7abd;
+  --caret-color: #0d0d0d;
+  --sub-color: #4f4f4f;
+  --sub-alt-color: #e0e0e0;
+  --text-color: #1f1f1f;
+  --error-color: #ff0008;
 }

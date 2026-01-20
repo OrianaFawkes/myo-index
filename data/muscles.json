@@ -2304,5 +2304,123 @@
     "insertion": ["sacrum", "coccyx"],
     "innervation": ["branches of S4-S5 spinal nerves"],
     "action": ["supports pelvic viscera", "flexes coccyx"]
+  },
+  {
+    "id": "tensor_veli_palatini",
+    "name": "Tensor veli palatini",
+    "type": "muscle",
+    "region": "soft_palate",
+    "origin": ["spine of sphenoid", "auditory tube"],
+    "insertion": ["palatine aponeurosis"],
+    "innervation": ["nerve to medial pterygoid (CN V3)"],
+    "action": ["tenses soft palate"]
+  },
+  {
+    "id": "levator_veli_palatini",
+    "name": "Levator veli palatini",
+    "type": "muscle",
+    "region": "soft_palate",
+    "origin": ["petrous part of temporal bone", "auditory tube"],
+    "insertion": ["palatine aponeurosis"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["elevates soft palate"]
+  },
+  {
+    "id": "palatopharyngeus",
+    "name": "Palatopharyngeus",
+    "type": "muscle",
+    "region": "soft_palate",
+    "origin": ["palatine aponeurosis"],
+    "insertion": ["posterior border of thyroid cartilage"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": [
+      "elevates pharyngeal wall",
+      "pulls palatopharyngeal folds medially"
+    ]
+  },
+  {
+    "id": "musculus_uvulae",
+    "name": "Musculus uvulae",
+    "type": "muscle",
+    "region": "soft_palate",
+    "origin": ["posterior border of hard palate"],
+    "insertion": ["mucous membrane of uvula"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["elevates uvula"]
+  },
+  {
+    "id": "superior_pharyngeal_constrictor",
+    "name": "Superior pharyngeal constrictor",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": [
+      "medial pterygoid plate",
+      "pterygoid hamulus",
+      "pterygomandibular ligament",
+      "mylohyoid line of mandible"
+    ],
+    "insertion": [
+      "pharyngeal tubercle of occipital bone",
+      "median pharyngeal raphe"
+    ],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": [
+      "aids soft palate in closing nasopharynx",
+      "propels bolus downward"
+    ]
+  },
+  {
+    "id": "middle_pharyngeal_constrictor",
+    "name": "Middle pharyngeal constrictor",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": [
+      "stylohyoid ligament",
+      "lesser cornu of hyoid bone",
+      "greater cornu of hyoid bone"
+    ],
+    "insertion": ["pharyngeal raphe"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["propels bolus downward"]
+  },
+  {
+    "id": "inferior_pharyngeal_constrictor",
+    "name": "Inferior pharyngeal constrictor",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": ["lamina of thyroid cartilage", "cricoid cartilage"],
+    "insertion": ["pharyngeal raphe"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["propels bolus downward"]
+  },
+  {
+    "id": "cricopharyngeus",
+    "name": "Cricopharyngeus",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": ["cricoid cartilage"],
+    "insertion": ["pharyngeal wall"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["acts as upper esophageal sphincter"]
+  },
+  {
+    "id": "stylopharyngeus",
+    "name": "Stylopharyngeus",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": ["styloid process of temporal bone"],
+    "insertion": ["posterior border of thyroid cartilage"],
+    "innervation": ["glossopharyngeal nerve (CN IX)"],
+    "action": ["elevates pharynx", "elevates larynx during swallowing"]
+  },
+  {
+    "id": "salpingopharyngeus",
+    "name": "Salpingopharyngeus",
+    "type": "muscle",
+    "region": "pharynx",
+    "origin": ["auditory tube"],
+    "insertion": ["blends with palatopharyngeus"],
+    "innervation": ["pharyngeal plexus (CN X)"],
+    "action": ["elevates pharynx"]
   }
 ]
