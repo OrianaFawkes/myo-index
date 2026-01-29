@@ -14,6 +14,13 @@ const inputEl = document.getElementById("search-input");
 const inputWrapperEl = inputEl.closest(".input-wrapper");
 const suggestionsEl = document.getElementById("suggestions");
 const outputEl = document.getElementById("output");
+const themeToggleEl = document.getElementById("themeToggle");
+const themePopoverEl = document.getElementById("themePopover");
+
+const savedColor = localStorage.getItem("mainColor");
+if (savedColor) {
+  rootEl.style.setProperty("--main-color", savedColor);
+}
 
 async function init() {
   anatomyData = await loadAnatomyData();
@@ -22,9 +29,20 @@ async function init() {
 
 init();
 
+document.querySelectorAll("#themePopover [data-color]").forEach((btn) => {
+  btn.style.backgroundColor = btn.dataset.color;
 
+  btn.addEventListener("click", () => {
+    const color = btn.dataset.color;
+    rootEl.style.setProperty("--main-color", color);
+    localStorage.setItem("mainColor", color);
 
+    themePopoverEl.classList.add("hidden");
+  });
+});
 
+document.addEventListener("click", () => {
+  themePopoverEl.classList.add("hidden");
 });
 
 document.addEventListener("keydown", (e) => {
@@ -126,6 +144,12 @@ inputEl.addEventListener("input", () => {
     renderGuidance(matches, outputEl);
   }
 });
+
+themeToggleEl.addEventListener("click", (e) => {
+  e.stopPropagation();
+  themePopoverEl.classList.toggle("hidden");
+});
+
 function updateHighlight(items) {
   items.forEach((li, idx) => {
     li.classList.toggle("highlighted", idx === selectedIndex);
