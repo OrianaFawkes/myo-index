@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="https://fav.farm/🦋" />
   </head>
   <body>
     <div id="app" class="content-grid">
@@ -33,31 +34,63 @@
         </section>
       </main>
       <footer>
-        <small>
-          Made by
-          <a
-            href="https://github.com/orianafawkes"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ori</a
-          ></small
-        >
-        <small>
-          <a
-            href="https://github.com/orianafawkes/myo-index"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          ></small
-        >
-        <small>
-          <a
-            href="https://forms.gle/ENGfeUgE3TtcWXwz9"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Feedback</a
-          ></small
-        >
+        <div class="shortcut-guide">
+          <ul>
+            <li><kbd data-key="Escape">Esc</kbd>- clear search</li>
+            <li>
+              <kbd data-key="ArrowUp">↑</kbd>
+              <kbd data-key="ArrowDown">↓</kbd>
+              - navigate suggestions
+            </li>
+            <li><kbd data-key="Enter">Enter</kbd>- select suggestion</li>
+            <li><kbd data-key="t">T</kbd>- focus search</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <small>
+              Made by
+              <a
+                href="https://github.com/orianafawkes"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ori</a
+              ></small
+            >
+            <small>
+              <a
+                href="https://github.com/orianafawkes/myo-index"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              ></small
+            >
+            <small>
+              <a
+                href="https://forms.gle/ENGfeUgE3TtcWXwz9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Feedback</a
+              ></small
+            >
+          </div>
+          <div>
+            <button id="themeToggle" aria-label="Change theme color">
+              <span class="color-swatch"></span>
+            </button>
+            <div id="themePopover" class="hidden">
+              <button data-color="#6494aa"></button>
+              <button data-color="#218380"></button>
+              <button data-color="#90a959"></button>
+              <button data-color="#e3b505"></button>
+              <button data-color="#f3a712"></button>
+              <button data-color="#df3434"></button>
+              <button data-color="#d66ba0"></button>
+              <button data-color="#957fef"></button>
+              <button data-color="#7e52a0"></button>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
     <script type="module" src="js/main.js"></script>
