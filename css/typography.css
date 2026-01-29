@@ -171,24 +171,6 @@
   src: url("../assets/fonts/Redaction/Redaction-Bold.woff2") format("woff2");
 }
 
-/* Libre Franklin */
-
-@font-face {
-  font-family: "Libre Franklin";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf")
-    format("ttf");
-}
-
-@font-face {
-  font-family: "Libre Franklin";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../assets/fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf")
-    format("ttf");
-}
-
 :root {
   --font: "Redaction", ui-serif, Georgia, "Times New Roman", serif;
   --font-10: "Redaction-10", ui-serif, Georgia, "Times New Roman", serif;
@@ -197,5 +179,4 @@
   --font-50: "Redaction-50", ui-serif, Georgia, "Times New Roman", serif;
   --font-70: "Redaction-70", ui-serif, Georgia, "Times New Roman", serif;
   --font-100: "Redaction-100", ui-serif, Georgia, "Times New Roman", serif;
-  --sans-font: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
