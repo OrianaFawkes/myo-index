@@ -36,10 +36,9 @@ export function highlightMatch(text, query) {
   const index = text.toLowerCase().indexOf(query);
   if (index === -1) return text;
   return `
-    ${text.slice(0, index)}
-    <strong>${text.slice(index, index + query.length)}</strong>${text.slice(
-    index + query.length
-  )}
+    ${text.slice(0, index)}<strong>${text.slice(index, index + query.length)}</strong>${text.slice(
+      index + query.length,
+    )}
   `;
 }
 
@@ -49,15 +48,16 @@ export function renderSuggestions(
   inputEl,
   suggestionsEl,
   inputWrapperEl,
-  outputEl
+  outputEl,
 ) {
   const hasMatches = matches.length > 0;
+  const maxSuggestions = query.length <= 1 ? 5 : query.length === 2 ? 8 : 12;
 
   suggestionsEl.innerHTML = "";
   suggestionsEl.classList.toggle("hidden", !hasMatches);
   inputWrapperEl.classList.toggle("is-open", hasMatches);
 
-  matches.forEach((muscle) => {
+  matches.slice(0, maxSuggestions).forEach((muscle) => {
     const li = document.createElement("li");
 
     li.innerHTML = highlightMatch(muscle.name, query);
@@ -74,9 +74,7 @@ export function renderSuggestions(
 }
 
 function formatRegion(region) {
-  return region
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+  return region.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 function sentenceCase(text) {
