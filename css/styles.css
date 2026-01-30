@@ -160,6 +160,7 @@ input[type="search"]::-webkit-search-cancel-button {
   list-style: none;
   left: 0;
   margin: 0;
+  max-height: 60svh;
   outline: none;
   overflow-y: auto;
   padding: 0;
@@ -177,6 +178,10 @@ input[type="search"]::-webkit-search-cancel-button {
 .suggestions li:hover,
 .suggestions li.highlighted {
   background-color: var(--sub-alt-color);
+}
+
+.suggestions strong {
+  color: var(--main-color);
 }
 
 /* OUTPUT */
