@@ -1,5 +1,13 @@
-export function findMatches(query, anatomyData) {
+import { REGION_TO_GROUP } from "./filter.js";
+
+export function findMatches(query, anatomyData, activeRegionGroup) {
   return anatomyData
+    .filter((muscle) => {
+      if (!activeRegionGroup || activeRegionGroup === "All") return true;
+
+      const group = REGION_TO_GROUP[muscle.region] ?? "Unknown";
+      return group === activeRegionGroup;
+    })
     .map((muscle) => ({
       muscle,
       score: getMatchScore(query, muscle),
