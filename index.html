@@ -15,6 +15,10 @@
         <h1>Myo Index</h1>
       </header>
       <main class="app">
+        <section class="filter-wrapper">
+          <label>Muscle Regions</label>
+          <div id="regionFilters" class="filter-bar"></div>
+        </section>
         <section class="input-wrapper">
           <label for="search-input">Muscle Search</label>
           <input
@@ -36,14 +40,15 @@
       <footer>
         <div class="shortcut-guide">
           <ul>
-            <li><kbd data-key="Escape">Esc</kbd>- clear search</li>
+            <li><kbd>t</kbd>- Focus Search</li>
+            <li><kbd>↑</kbd><kbd>↓</kbd>- Navigate Suggestions</li>
             <li>
-              <kbd data-key="ArrowUp">↑</kbd>
-              <kbd data-key="ArrowDown">↓</kbd>
-              - navigate suggestions
+              <kbd>Alt</kbd> / <kbd>Option</kbd> + <kbd>r</kbd> - Next Region
             </li>
-            <li><kbd data-key="Enter">Enter</kbd>- select suggestion</li>
-            <li><kbd data-key="t">T</kbd>- focus search</li>
+            <li>
+              <kbd>Alt</kbd> / <kbd>Option</kbd> + <kbd>Shift</kbd> +
+              <kbd>r</kbd> - Prev Region
+            </li>
           </ul>
         </div>
         <div>

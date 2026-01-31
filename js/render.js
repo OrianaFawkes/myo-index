@@ -1,4 +1,30 @@
+import { REGION_TO_GROUP } from "./filter.js";
 import { clearSuggestions } from "./utils.js";
+
+export function renderRegionFilters(containerEl, activeRegion = "All", onSelect) {
+  const groups = ["All", ...new Set(Object.values(REGION_TO_GROUP))];
+
+  containerEl.innerHTML = groups
+    .map(
+      (group) => `
+      <button class="region-chip ${group === activeRegion ? "active" : ""}" data-group="${group}">
+        ${group}
+      </button>
+    `
+    )
+    .join("");
+
+  containerEl.querySelectorAll(".region-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      containerEl.querySelectorAll(".region-chip").forEach((b) =>
+        b.classList.remove("active")
+      );
+      btn.classList.add("active");
+
+      if (onSelect) onSelect(btn.dataset.group);
+    });
+  });
+}
 
 export function renderMuscle(muscle, outputEl) {
   outputEl.className = "output";
@@ -51,7 +77,7 @@ export function renderSuggestions(
   outputEl,
 ) {
   const hasMatches = matches.length > 0;
-  const maxSuggestions = query.length <= 1 ? 5 : query.length === 2 ? 8 : 12;
+  const maxSuggestions = query.length <= 1 ? 8 : query.length === 2 ? 12 : 16;
 
   suggestionsEl.innerHTML = "";
   suggestionsEl.classList.toggle("hidden", !hasMatches);
