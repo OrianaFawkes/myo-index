@@ -54,8 +54,20 @@ document.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (e) => {
+  const isAlt = e.altKey; // Alt (Win) or Option (Mac)
+  const isShift = e.shiftKey; // Shift pressed
   const items = suggestionsEl.querySelectorAll("li");
   const isTyping = document.activeElement === inputEl;
+
+  if (isAlt && !isShift && e.key.toLocaleLowerCase() === "r") {
+    e.preventDefault();
+    cycleRegion(1);
+  }
+
+  if (isAlt && isShift && e.key.toLocaleLowerCase() === "r") {
+    e.preventDefault();
+    cycleRegion(-1);
+  }
 
   if (e.key === "t" && !isTyping) {
     e.preventDefault();
@@ -155,6 +167,24 @@ function handleRegionSelect(group) {
     );
     renderGuidance(matches, outputEl);
   }
+}
+
+function cycleRegion(delta) {
+  const chips = Array.from(regionFiltersEl.querySelectorAll(".region-chip"));
+  if (!chips.length) return;
+
+  const activeIndex = chips.findIndex((chip) =>
+    chip.classList.contains("active"),
+  );
+
+  let nextIndex = (activeIndex + delta + chips.length) % chips.length;
+
+  // Update UI
+  chips.forEach((chip) => chip.classList.remove("active"));
+  chips[nextIndex].classList.add("active");
+
+  // Update state + rerun search
+  handleRegionSelect(chips[nextIndex].dataset.group);
 }
 
 function moveSelection(delta) {
