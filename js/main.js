@@ -67,39 +67,21 @@ document.addEventListener("keydown", (e) => {
     return;
   }
 
-  if (!items.length) return;
-
   if (e.key === "ArrowDown") {
     e.preventDefault();
 
     selectedIndex++;
-
-    if (selectedIndex >= items.length) {
-      selectedIndex = -1;
-      inputEl.value = baseQuery;
-    } else {
-      inputEl.value = items[selectedIndex].dataset.value;
-    }
-
-    updateHighlight(items);
+    moveSelection(1);
   }
 
   if (e.key === "ArrowUp") {
     e.preventDefault();
 
     selectedIndex--;
-
-    if (selectedIndex < -1) {
-      selectedIndex = items.length - 1;
-      inputEl.value = items[selectedIndex].dataset.value;
-    } else if (selectedIndex === -1) {
-      inputEl.value = baseQuery;
-    } else {
-      inputEl.value = items[selectedIndex].dataset.value;
-    }
-
-    updateHighlight(items);
+    moveSelection(-1);
   }
+
+  if (!items.length) return;
 
   if (e.key === "Enter") {
     if (!isTyping) return;
@@ -158,12 +140,6 @@ themeToggleEl.addEventListener("click", (e) => {
   themePopoverEl.classList.toggle("hidden");
 });
 
-function updateHighlight(items) {
-  items.forEach((li, idx) => {
-    li.classList.toggle("highlighted", idx === selectedIndex);
-  });
-}
-
 function flashKey(key) {
   const el = document.querySelector(`kbd[data-key="${key}"]`);
   if (!el) return;
@@ -195,4 +171,27 @@ function handleRegionSelect(group) {
     );
     renderGuidance(matches, outputEl);
   }
+}
+
+function moveSelection(delta) {
+  const items = suggestionsEl.querySelectorAll("li");
+  if (!items.length) return;
+
+  selectedIndex += delta;
+
+  if (selectedIndex >= items.length) {
+    selectedIndex = -1;
+    inputEl.value = baseQuery;
+  } else if (selectedIndex < -1) {
+    selectedIndex = items.length - 1;
+    inputEl.value = items[selectedIndex].dataset.value;
+  } else if (selectedIndex === -1) {
+    inputEl.value = baseQuery;
+  } else {
+    inputEl.value = items[selectedIndex].dataset.value;
+  }
+
+  items.forEach((li, idx) => {
+    li.classList.toggle("highlighted", idx === selectedIndex);
+  });
 }
