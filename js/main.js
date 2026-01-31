@@ -1,15 +1,22 @@
 import { loadAnatomyData } from "./dataLoader.js";
 import { findMatches, isExactMatch } from "./search.js";
-import { renderMuscle, renderSuggestions, renderGuidance } from "./render.js";
+import {
+  renderRegionFilters,
+  renderMuscle,
+  renderSuggestions,
+  renderGuidance,
+} from "./render.js";
 import { clearSuggestions, renderPlaceholder } from "./utils.js";
 
 const MYO_INDEX_VERSION = "0.1.0";
 
+let activeRegion = "All";
 let anatomyData = [];
 let baseQuery = "";
 let selectedIndex = -1;
 
 const rootEl = document.documentElement;
+const regionFiltersEl = document.getElementById("regionFilters");
 const inputEl = document.getElementById("search-input");
 const inputWrapperEl = inputEl.closest(".input-wrapper");
 const suggestionsEl = document.getElementById("suggestions");
@@ -25,6 +32,7 @@ if (savedColor) {
 async function init() {
   anatomyData = await loadAnatomyData();
   renderPlaceholder(outputEl);
+  renderRegionFilters(regionFiltersEl, activeRegion, handleRegionSelect);
 }
 
 init();
@@ -126,7 +134,7 @@ inputEl.addEventListener("input", () => {
     return;
   }
 
-  const matches = findMatches(query, anatomyData);
+  const matches = findMatches(query, anatomyData, activeRegion);
 
   if (matches.length === 1 && isExactMatch(query, matches[0])) {
     clearSuggestions(suggestionsEl, inputWrapperEl);
@@ -162,4 +170,29 @@ function flashKey(key) {
 
   el.classList.add("is-active");
   setTimeout(() => el.classList.remove("is-active"), 150);
+}
+
+function handleRegionSelect(group) {
+  activeRegion = group;
+
+  // Re-run search with current input
+  const query = inputEl.value.trim().toLowerCase();
+  if (!query) return;
+
+  const matches = findMatches(query, anatomyData, activeRegion);
+  if (matches.length === 1 && isExactMatch(query, matches[0])) {
+    clearSuggestions(suggestionsEl, inputWrapperEl);
+    renderMuscle(matches[0], outputEl);
+  } else {
+    selectedIndex = -1;
+    renderSuggestions(
+      matches,
+      query,
+      inputEl,
+      suggestionsEl,
+      inputWrapperEl,
+      outputEl,
+    );
+    renderGuidance(matches, outputEl);
+  }
 }
