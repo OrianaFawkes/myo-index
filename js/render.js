@@ -77,7 +77,7 @@ export function renderSuggestions(
   outputEl,
 ) {
   const hasMatches = matches.length > 0;
-  const maxSuggestions = query.length <= 1 ? 5 : query.length === 2 ? 8 : 12;
+  const maxSuggestions = query.length <= 1 ? 8 : query.length === 2 ? 12 : 16;
 
   suggestionsEl.innerHTML = "";
   suggestionsEl.classList.toggle("hidden", !hasMatches);
