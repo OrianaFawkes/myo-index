@@ -325,10 +325,6 @@ footer {
   padding: 0.125em 0.5em;
 }
 
-kbd.is-active {
-  background: var(--main-color);
-}
-
 footer > div:last-child {
   align-items: end;
   display: flex;

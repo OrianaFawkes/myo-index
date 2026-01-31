@@ -54,10 +54,6 @@ document.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (e) => {
-  if (!e.repeat) {
-    flashKey(e.key);
-  }
-  
   const items = suggestionsEl.querySelectorAll("li");
   const isTyping = document.activeElement === inputEl;
 
@@ -69,15 +65,11 @@ document.addEventListener("keydown", (e) => {
 
   if (e.key === "ArrowDown") {
     e.preventDefault();
-
-    selectedIndex++;
     moveSelection(1);
   }
 
   if (e.key === "ArrowUp") {
     e.preventDefault();
-
-    selectedIndex--;
     moveSelection(-1);
   }
 
@@ -139,14 +131,6 @@ themeToggleEl.addEventListener("click", (e) => {
   e.stopPropagation();
   themePopoverEl.classList.toggle("hidden");
 });
-
-function flashKey(key) {
-  const el = document.querySelector(`kbd[data-key="${key}"]`);
-  if (!el) return;
-
-  el.classList.add("is-active");
-  setTimeout(() => el.classList.remove("is-active"), 150);
-}
 
 function handleRegionSelect(group) {
   activeRegion = group;
